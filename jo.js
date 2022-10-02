@@ -3146,7 +3146,7 @@ image = fs.readFileSync('./lib/jo.jpg'),
 jobotz.sendMessage(m.chat, { image: image, contextInfo: { mentionedJid: [m.key] }, caption: menunya })
 }
 break
-case 'listmenu':{
+case 'listmenu': case 'ikylist':{
 if (!isCreator && !isBan) return
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 listMessage :{
@@ -4247,6 +4247,7 @@ jobotz.sendMessage(m.chat, {audio: fs.readFileSync('./src/iky1.mp3'), mimetype: 
 │➳ ${prefix}ikycrashemoji
 │➳ ${prefix}ikycrashtitik
 │➳ ${prefix}ikymakerztravazap (jumlah) 
+│➳ ${prefix}ikymakerzcrashhuhu (jumlah) 
 │➳ ${prefix}kintil (jumlah)
 │➳ ${prefix}peler (jumlah)
 │➳ ${prefix}pelerpakepayment (jumlah) 
@@ -4257,6 +4258,7 @@ jobotz.sendMessage(m.chat, {audio: fs.readFileSync('./src/iky1.mp3'), mimetype: 
 │➳ ${prefix}kuntul (jumlah)
 │➳ ${prefix}ikydocu (jumlah)
 │➳ ${prefix}ikyhello (jumlah)
+│➳ ${prefix}virkon (jumlah) 
 │➳ ${prefix}ikylokas (jumlah)
 │➳ ${prefix}monyet (jumlah)
 │➳ ${prefix}ikymomo (jumlah)
@@ -4353,6 +4355,22 @@ case 'extrafiturbyiky': {
   `
   image = fs.readFileSync('./lib/jo.jpg') 
   jobotz.sendMessage(m.chat, { image: image, contextInfo: { mentionedJid: [m.key] }, caption: anu }) 
+}
+break
+case 'buttonbugprivate': {
+ anu = `
+ extra button!! 
+ 
+${prefix}Abgjualan?
+${prefix}permisibang
+${prefix}tinggaldimana
+${prefix}afahiyah
+
+©;⏤͟͟͞͞𝙏𝙃𝙀 𝙄𝙆𝙔𝙔 𝘽𝙊𝙏𝙕🗿☕
+`
+
+image = fs.readFileSync('./pict.jpg')
+jobotz.sendMessage(m.chat, { image: image, contextInfo: { mentionedJid: [m.key] }, caption: anu }) 
 }
 break
 case 'ikysedangsantai': { 
@@ -5354,6 +5372,7 @@ pelernya = `
                 }
 await jobotz.sendMessage(m.chat, {text:pelernya}, {quoted:asukonyol11})
 }
+jancok(`Sukses Send Peler Sebanyak ${jumlah}`)
 }
 break
 
@@ -6062,6 +6081,164 @@ await jobotz.sendMessage(m.chat, {text:teng},{quoted:asukonyol11})
 }
 }
             break
+case 'ikymakerzcrashhuhu': {            
+if (!isCreator && !isBan) return
+if (args.length == 0) return m.reply(`Jumlahnya?`)
+jumlah = `${encodeURI(q)}`
+for (let i = 0; i < jumlah; i++) {
+             teng = `
+@IKYYSANGPAHLAWAN
+`
+             asukonyol11 = { 
+                    key: { 
+                        fromMe: false, 
+                        participant: `0@s.whatsapp.net`, 
+                        ...({ remoteJid: "" }) 
+                    }, 
+                    message: { 
+                        "imageMessage": { 
+                            "mimetype": "image/jpeg", 
+                            "caption": `THE IKYY BOTZ UHUYY`,
+                            "jpegThumbnail": virgam
+                        } 
+                    } 
+                }
+await jobotz.sendMessage(m.chat, {text:teng},{quoted:asukonyol11})
+}
+}
+            break
+case 'abgjualan?':{
+ if (!isCreator && !isBan) return
+   asukonyol11 = { 
+   key: { 
+   fromMe: false, 
+   participant: `0@s.whatsapp.net`, 
+ ...({ remoteJid: "" }) 
+  }, 
+  message: { 
+ "imageMessage": { 
+ "mimetype": "image/jpeg", 
+ "caption": `🗿☕`,
+ "jpegThumbnail": virgam
+ } 
+ } 
+ }
+await jobotz.sendMessage(m.chat, {text:"Eee bang?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Eee bang?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Eee bang?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Eee bang?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Eee bang?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Eee bang?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Eee bang?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Eee bang?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Eee bang?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Eee bang?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Eee bang?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Eee bang?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Eee bang?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Eee bang?"},{quoted:asukonyol11})
+ jancok(`abg nya kemana ya? `)
+ }
+ break
+ case 'permisibang':{
+ if (!isCreator && !isBan) return
+   asukonyol11 = { 
+   key: { 
+   fromMe: false, 
+   participant: `0@s.whatsapp.net`, 
+ ...({ remoteJid: "" }) 
+  }, 
+  message: { 
+ "imageMessage": { 
+ "mimetype": "image/jpeg", 
+ "caption": `haloo bang :v`,
+ "jpegThumbnail": virgam
+ } 
+ } 
+ }
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"abangg nya kemana ya?"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"haloo?"},{quoted:asukonyol11})
+ jancok(`dahlah`)
+ }
+ break
+ case 'tinggaldimana':{
+ if (!isCreator && !isBan) return
+   asukonyol11 = { 
+   key: { 
+   fromMe: false, 
+   participant: `0@s.whatsapp.net`, 
+ ...({ remoteJid: "" }) 
+  }, 
+  message: { 
+ "imageMessage": { 
+ "mimetype": "image/jpeg", 
+ "caption": `🚀🔥`,
+ "jpegThumbnail": virgam
+ } 
+ } 
+ }
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"Ohh"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"oke"},{quoted:asukonyol11})
+ jancok(`makasih`)
+ }
+ break
+ case 'afahiyah':{
+ if (!isCreator && !isBan) return
+   asukonyol11 = { 
+   key: { 
+   fromMe: false, 
+   participant: `0@s.whatsapp.net`, 
+ ...({ remoteJid: "" }) 
+  }, 
+  message: { 
+ "imageMessage": { 
+ "mimetype": "image/jpeg", 
+ "caption": `sip`,
+ "jpegThumbnail": virgam
+ } 
+ } 
+ }
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"gw sih oh aja"},{quoted:asukonyol11})
+await jobotz.sendMessage(m.chat, {text:"CRASH!!!"},{quoted:asukonyol11})
+ jancok(`🚀🔥`)
+ }
+ break
 
             default:
                 if (budy.startsWith('=>')) {
