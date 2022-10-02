@@ -4334,6 +4334,15 @@ case 'extrafiturbyiky': {
   │
   │${prefix}ikysedangberadadiduniaisekai
   ──────────────────│
+                               │
+   ${prefix}acumalaka         │
+  ──────────────────
+  │
+  │${prefix}ikysad
+  │─────────────────│
+                               │
+   ${prefix}ikydark             │
+  ──────────────────│
   ©;⏤͟͟͞͞𝙏𝙃𝙀 𝙄𝙆𝙔𝙔 𝘽𝙊𝙏𝙕☕
   `
   image = fs.readFileSync('./lib/jo.jpg') 
@@ -4369,6 +4378,16 @@ break
 case 'acumalaka': {
  m.reply (`awikwok bgt bangj`)
 jobotz.sendMessage(m.chat, {audio: fs.readFileSync('./src/iky5.mp3'), mimetype: 'audio/mpeg', ptt:true })
+}
+break
+case 'ikysad': {
+ m.reply (`Hmmmm`)
+jobotz.sendMessage(m.chat, {audio: fs.readFileSync('./src/iky6.mp3'), mimetype: 'audio/mpeg', ptt:true })
+}
+break
+case 'ikydark': {
+ m.reply (`Yaa!`)
+jobotz.sendMessage(m.chat, {audio: fs.readFileSync('./src/iky7.mp3'), mimetype: 'audio/mpeg', ptt:true })
 }
 break
 case 'bokep':{
