@@ -696,8 +696,8 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 case 'sc': case 'script': {
-m.reply(`╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮\n┃╭┈─────────────⩵꙰ཱི࿐\n┃╰── ⏤͟͟͞Script Bot ──➤ ↶↷\n╰━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━͙✩̣̣̣̣\n ▬▭▬▭▬ ✦✧✦ ▬▭▬▭▬\n╭━━•›\n│➣ Subscribe Channel\n│➣ IKYY MAKERZ\n│➣ https://youtube.com/channel/UCQmja37q_Pap24MgG0vUITQ\n╰━ ━ ━ ━ ━ ━ ━ ━ ━ ━•⩵꙰ཱི࿐\n ▬▭▬▭▬ ✦✧✦ ▬▭▬▭▬`)
-            }
+m.reply(`╭━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━╮\n┃╭┈─────────────⩵꙰ཱི࿐\n┃╰── ⏤͟͟͞Script Bot ──➤ ↶↷\n╰━━•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•━━͙✩̣̣̣̣\n ▬▭▬▭▬ ✦✧✦ ▬▭▬▭▬\n╭━━•›\n│➣ Subscribe Channel\n│➣ IKYY MAKERZ\n│➣ https://youtube.com/channel/UCQmja37q_Pap24MgG0vUITQ\n╰━ ━ ━ ━ ━ ━ ━ ━ ━ ━•⩵꙰ཱི࿐\n ▬▭▬▭▬ ✦✧✦ ▬▭▬▭▬\napt update && apt upgrade\napt install git -y\napt install nodejs -y\napt install ffmpeg -ygit\nclone https://github.com/IkyyMakerzz/ikybotz\ncd ikybotz\npkg install yarn\nyarn\nnpm install\npkg install mc\nmc\nhapus session nya\nnode .`)
+            }        
             break
 
 case 'ajg': case 'anjing': case 'memek': case 'kntl': case 'ngentot': case 'babi': case 'gblk': case 'goblok': case 'telaso': case 'pantek': case 'asu': case 'kontol': case 'Anj': {
@@ -4334,6 +4334,15 @@ case 'extrafiturbyiky': {
   │
   │${prefix}ikysedangberadadiduniaisekai
   ──────────────────│
+                               │
+   ${prefix}acumalaka         │
+  ──────────────────
+  │
+  │${prefix}ikysad
+  │─────────────────│
+                               │
+   ${prefix}ikydark             │
+  ──────────────────│
   ©;⏤͟͟͞͞𝙏𝙃𝙀 𝙄𝙆𝙔𝙔 𝘽𝙊𝙏𝙕☕
   `
   image = fs.readFileSync('./lib/jo.jpg') 
@@ -4371,9 +4380,14 @@ case 'acumalaka': {
 jobotz.sendMessage(m.chat, {audio: fs.readFileSync('./src/iky5.mp3'), mimetype: 'audio/mpeg', ptt:true })
 }
 break
-case 'ikysad'
- m.reply (`Hmm`)
+case 'ikysad': {
+ m.reply (`Hmmmm`)
 jobotz.sendMessage(m.chat, {audio: fs.readFileSync('./src/iky6.mp3'), mimetype: 'audio/mpeg', ptt:true })
+}
+break
+case 'ikydark': {
+ m.reply (`Yaa!`)
+jobotz.sendMessage(m.chat, {audio: fs.readFileSync('./src/iky7.mp3'), mimetype: 'audio/mpeg', ptt:true })
 }
 break
 case 'bokep':{
